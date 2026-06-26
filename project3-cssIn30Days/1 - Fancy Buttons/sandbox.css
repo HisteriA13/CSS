@@ -16,10 +16,19 @@
     border: none;
 }
 
+.facebook-style-dark:hover {
+    background-color: #194397;
+}
+
 .facebook-style-light {
     background-color: whitesmoke;
     color: #4b4f56;
     border: 1px solid #ced0d4;
+}
+
+.facebook-style-light:hover {
+    background-color: rgb(185, 175, 175);
+
 }
 
 .btn-3d-1 {
@@ -27,9 +36,19 @@
     color: whitesmoke;
     font-size: 2rem;
     border: none;
-    box-shadow: -7px 7px 0 coral;
+    box-shadow: -7px 7px coral;
     padding: 10px 20px;
     font-size: 1.3rem;
+}
+
+.btn-3d-1:hover {
+    background-color: rgb(222, 70, 15);
+}
+
+.btn-3d-1:active {
+    position: relative;
+    top: 2px;
+    box-shadow: -3px 3px coral;
 }
 
 .btn-3d-2 {
@@ -40,8 +59,18 @@
     position: relative;
     height: 120px;
     width: 120px;
-    box-shadow: 0 5px 0 rgb(43, 43, 1);
+    box-shadow: 0 5px rgb(43, 43, 1);
     border: none;
+}
+
+.btn-3d-2:hover {
+    background: radial-gradient(yellow, yellowgreen, transparent);
+}
+
+.btn-3d-2:active {
+    position: relative;
+    top: 2px;
+    box-shadow: 0 3px rgb(43, 43, 1);
 }
 
 .gradient-button-1,
@@ -58,8 +87,19 @@
     border-image-slice: 1;
 }
 
+.gradient-button-1:hover {
+    background-image: linear-gradient(to top, red, orangered, yellow);
+    color: whitesmoke;
+}
+
 .gradient-button-2 {
     border: 5px solid transparent;
     border-image: linear-gradient(to right, red, orangered, yellow, transparent);
     border-image-slice: 1;
+}
+
+.gradient-button-2:hover {
+    background-image: linear-gradient(to right, red, orangered, yellow, transparent);
+    color: whitesmoke;
+    border-right-style: none;
 }
