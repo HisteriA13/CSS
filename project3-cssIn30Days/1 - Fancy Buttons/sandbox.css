@@ -1,0 +1,65 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+.facebook-style-btn {
+    padding: 7px 12px;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.facebook-style-dark {
+    background-color: #4267b2;
+    color: #FFF;
+    border: none;
+}
+
+.facebook-style-light {
+    background-color: whitesmoke;
+    color: #4b4f56;
+    border: 1px solid #ced0d4;
+}
+
+.btn-3d-1 {
+    background-color: orangered;
+    color: whitesmoke;
+    font-size: 2rem;
+    border: none;
+    box-shadow: -7px 7px 0 coral;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+}
+
+.btn-3d-2 {
+    background: radial-gradient(yellow, yellowgreen);
+    color: #000;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    position: relative;
+    height: 120px;
+    width: 120px;
+    box-shadow: 0 5px 0 rgb(43, 43, 1);
+    border: none;
+}
+
+.gradient-button-1,
+.gradient-button-2 {
+    padding: 20px 40px;
+    color: orangered;
+    font-size: 1.5rem;
+    background-color: #e7eef1;
+}
+
+.gradient-button-1 {
+    border: 10px solid transparent;
+    border-image: linear-gradient(to top, red, orangered, yellow);
+    border-image-slice: 1;
+}
+
+.gradient-button-2 {
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, red, orangered, yellow, transparent);
+    border-image-slice: 1;
+}
