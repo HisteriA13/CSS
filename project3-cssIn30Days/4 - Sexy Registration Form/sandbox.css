@@ -1,0 +1,39 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+* {
+  box-sizing: border-box;
+}
+.register-wrapper {
+  background-image: linear-gradient(130deg, #0eeff0 30%, #088f90 90%);
+  padding: 100px;
+}
+
+.register-block {
+  background-color: aliceblue;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  padding: 30px;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  margin: 0 auto 30px auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  line-height: 2rem;
+  font-size: small;
+}
+
+input[type="submit"] {
+  border: none;
+}
