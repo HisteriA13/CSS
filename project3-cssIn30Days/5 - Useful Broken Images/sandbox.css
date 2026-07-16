@@ -3,3 +3,30 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+img.image {
+  position: relative;
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80%;
+  height: 50px;
+}
+
+img.image:after {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px 10px 45px;
+  border: 1px dashed #888888;
+  background-color: #f0f0f0;
+  background-image: url(noimage.png);
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  content: "" attr(alt) " Not Found";
+}
