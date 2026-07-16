@@ -1,0 +1,30 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+img {
+  transition: all 0.6s ease-in-out;
+}
+
+img:hover {
+  cursor: all-scroll;
+}
+
+.grayscale:hover {
+  filter: grayscale(100%);
+}
+
+.blur:hover {
+  filter: blur(3px);
+}
+
+.invert:hover {
+  filter: invert(100%);
+}
+
+/* did't use sepia */
+.sepia:hover {
+  filter: hue-rotate(180deg);
+}
