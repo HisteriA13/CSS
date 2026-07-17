@@ -1,0 +1,87 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+.layout1 article {
+  width: 65%;
+  float: left;
+}
+
+.layout1 aside {
+  float: right;
+  width: 33%;
+}
+
+.layout1 footer {
+  clear: both;
+}
+
+.layout2 header::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.layout2 header .logo {
+  width: 20%;
+  float: left;
+  margin: 0;
+}
+
+.layout2 header nav {
+  width: 78%;
+  float: right;
+  margin: 0;
+}
+
+.layout2 aside.sidenav {
+  width: 20%;
+  float: left;
+}
+
+.layout2 article {
+  width: 53%;
+  float: left;
+  margin-left: 2%;
+}
+
+.layout2 aside.sidebar {
+  width: 23%;
+  float: right;
+}
+
+.layout2 footer {
+  clear: both;
+}
+
+.layout3 header::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.layout3 article:last-child {
+  margin: 0;
+}
+
+.layout3 header .logo {
+  width: 20%;
+  float: right;
+}
+
+.layout3 header nav {
+  width: 78%;
+  float: left;
+}
+
+.layout3 article {
+  width: 32%;
+  float: left;
+  margin: 1%;
+}
+
+.layout3 footer {
+  clear: both;
+}
