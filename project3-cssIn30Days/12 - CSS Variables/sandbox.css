@@ -1,0 +1,26 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+:root {
+  --primary-color: orangered;
+  --secondary-color: hotpink;
+  --base-measurement: 20px;
+  --text-color: #f3f3f3;
+}
+
+.box {
+  height: calc(var(--base-measurement) * 10);
+  width: calc(var(--base-measurement) * 10);
+  line-height: calc(var(--base-measurement) * 10);
+  color: var(--text-color);
+  background: var(--primary-color);
+  margin: var(--base-measurement);
+  text-align: center;
+}
+
+.box2 {
+  background: var(--secondary-color);
+}
