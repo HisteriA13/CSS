@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  width: 100%;
+}
+
+.heading {
+  font-size: 10vw;
+  font-weight: 900;
+  background: url(img/background.gif);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  font-family: "New Rocker", sans-serif;
+}
