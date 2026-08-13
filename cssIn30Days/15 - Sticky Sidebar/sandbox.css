@@ -3,3 +3,37 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+.sticky-sidebar-lesson {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sticky-sidebar-lesson::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sticky-sidebar-lesson .sandbox {
+  width: 60%;
+  margin: 0 0 40px;
+  float: left;
+}
+
+.sticky-sidebar {
+  box-sizing: border-box;
+  position: fixed;
+  right: 5%;
+  width: 25%;
+  padding: 40px 40px 60px;
+  background: #e7eef1;
+  box-shadow: 0 12px 0 -6px #fa90a3;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .sticky-sidebar {
+    padding: 0;
+  }
+}
