@@ -3,3 +3,10 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(242, 57, 90, 0.9);
+}
