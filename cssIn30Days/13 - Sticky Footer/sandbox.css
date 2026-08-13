@@ -3,3 +3,23 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.page-content {
+  min-height: 100%;
+  margin-bottom: -150px;
+}
+
+.page-content::after {
+  content: "";
+  display: block;
+}
+
+footer,
+.page-content::after {
+  height: 150px;
+}
