@@ -1,5 +1,59 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  filter: brightness(0) saturate(100%) invert(70%) sepia(12%) saturate(1035%)
+    hue-rotate(315deg) brightness(106%) contrast(78%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  position: relative;
+}
+
+.wire {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 60vh;
+  background: #000;
+  z-index: 1;
+}
+
+/* switch btn */
+.switch {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(#eee, #ccc, #eee);
+  border: 4px solid #000;
+  border-radius: 15px;
+  box-shadow: 0 20px 30px -10px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch .btn {
+}
+
+#audio {
+  display: none;
 }
