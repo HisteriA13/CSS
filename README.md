@@ -17,10 +17,11 @@ Each folder in this repository contains an individual solo project with its own 
 | Folder / Project                                 | Description                 | Key Concepts Learned                                 |     Status     |
 | :----------------------------------------------- | :-------------------------- | :--------------------------------------------------- | :------------: |
 | [./skyline/](./skyline/)                         | City Skyline                | Media queries, Flexbox, Gradients                    |  ✅ Completed  |
-| [./littleTacoShop/](./littleTacoShop/)           | Restaurant Page             | Dark mode support, Animations, Accessible vavigation |  ✅ Completed  |
+| [./littleTacoShop/](./littleTacoShop/)           | Restaurant Page             | Dark mode support, Animations, Accessible navigation |  ✅ Completed  |
 | [./cssIn30Days/](./cssIn30Days/)                 | Collection of Mini Projects | Clipping images, Box-shadow effect, Typography       | ⏳ In progress |
 | [./backgroundImageText/](./backgroundImageText/) | Background Image Text       | Background-clip                                      |  ✅ Completed  |
-
-> _Note: This project list is continuously updated as new projects are created._
+| [./lightBulb/](./lightBulb/)                     | Light Bulb                  | Positioning, ::before and ::after                    | ⏳ In progress |
 
 ---
+
+> _Note: This project list is continuously updated as new projects are created._
