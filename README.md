@@ -20,7 +20,7 @@ Each folder in this repository contains an individual solo project with its own 
 | [Little Taco Shop](https://histeria13.github.io/CSS/littleTacoShop/)           | [./littleTacoShop/](./littleTacoShop/)           | Restaurant Page             | Dark mode support, Animations, Accessible navigation | ✅ Completed   |
 |                                                                                | [./cssIn30Days/](./cssIn30Days/)                 | Collection of Mini Projects |    Clipping images, Box-shadow effect, Typography    | ⏳ In progress |
 | [Background Image Text](https://histeria13.github.io/CSS/backgroundImageText/) | [./backgroundImageText/](./backgroundImageText/) | Background Image Text       |                   Background-clip                    | ✅ Completed   |
-| [Lightbulb](https://histeria13.github.io/CSS/lightbulb/)                       | [./lightBulb/](./lightBulb/)                     | Light Bulb Toggle           |          Positioning, ::before and ::after           | ⏳ In progress |
+| [Lightbulb](https://histeria13.github.io/CSS/lightBulb/)                       | [./lightBulb/](./lightBulb/)                     | Light Bulb Toggle           |          Positioning, ::before and ::after           | ✅ Completed   |
 
 ---
 
