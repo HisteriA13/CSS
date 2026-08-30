@@ -8,6 +8,13 @@
 
 :root {
   --white: #fff;
+  --yellow: #ffb703;
+  --orange: #fb8500;
+  --red: #d90429;
+
+  --bg-off: #120e16;
+  --bg-on-top: #2b102f;
+  --bg-on-bottom: #0f051d;
 }
 
 #logo {
@@ -15,8 +22,8 @@
   top: 0;
   left: 0;
   width: 10%;
-  filter: brightness(0) saturate(100%) invert(70%) sepia(12%) saturate(1035%)
-    hue-rotate(315deg) brightness(106%) contrast(78%);
+  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(1450%)
+    hue-rotate(345deg) brightness(102%) contrast(105%);
 }
 
 body {
@@ -24,7 +31,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #222;
+  background: var(--bg-off);
   position: relative;
 }
 
