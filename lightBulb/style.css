@@ -13,8 +13,8 @@
   --red: #d90429;
 
   --bg-off: #120e16;
-  --bg-on-top: #2b102f;
-  --bg-on-bottom: #0f051d;
+  --bg-top: #2b102f;
+  --bg-bottom: #0f051d;
 }
 
 #logo {
@@ -107,7 +107,7 @@ body {
 
 /* js on class bulb */
 body.on {
-  background: linear-gradient(#555, #111);
+  background: linear-gradient(135deg, var(--bg-top), var(--bg-bottom));
 }
 
 body.on .bulb::after {
@@ -118,25 +118,25 @@ body.on .bulb::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: var(--white);
   border-radius: 50%;
   filter: blur(40px);
+  z-index: -1;
 }
 
 body.on .bulb::before {
-  background: var(--white);
+  background: var(--yellow);
 }
 
 body.on .bulb {
-  background: var(--white);
+  background: var(--yellow);
   box-shadow:
-    0 0 50px var(--white),
-    0 0 100px var(--white),
-    0 0 150px var(--white),
-    0 0 200px var(--white),
-    0 0 250px var(--white),
-    0 0 300px var(--white),
-    0 0 350px var(--white);
+    0 0 20px var(--yellow),
+    0 0 50px var(--yellow),
+    0 0 90px var(--orange),
+    0 0 140px var(--orange),
+    0 0 200px var(--red),
+    0 0 280px var(--red),
+    0 0 360px rgba(217, 4, 41, 0.4);
 }
 
 /* js on class switch move*/
