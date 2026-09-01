@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100dvh;
   font-family: cursive;
   display: flex;
   justify-content: center;
