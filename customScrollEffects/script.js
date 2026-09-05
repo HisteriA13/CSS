@@ -14,6 +14,7 @@ function handleBackground() {
 
 function handleArrow() {
   if (window.scrollY < 5) {
+    // tried with toggle but had some wierd blinking
     arrow.classList.add("fade-in");
     arrow.classList.remove("fade-out");
   } else {

@@ -12,8 +12,8 @@
   top: 0;
   left: 0;
   width: 10%;
-  filter: brightness(0) saturate(100%) invert(57%) sepia(20%) saturate(6852%)
-    hue-rotate(2deg) brightness(103%) contrast(103%);
+  filter: brightness(0) saturate(100%) invert(87%) sepia(10%) saturate(96%)
+    hue-rotate(165deg) brightness(107%) contrast(87%);
 }
 
 body {
@@ -30,14 +30,10 @@ body {
   background-size: 100%;
 }
 
-/* .arrow {
-  height: 10vh;
-} */
-
 #arrow {
   width: 55px;
   height: 55px;
-  border: 2px solid #333;
+  border: 2px solid rgb(24, 81, 73);
   margin: auto;
   border-radius: 50%;
   position: relative;
@@ -48,11 +44,11 @@ body {
   content: "";
   width: 15px;
   height: 15px;
-  border: 2px solid #333;
+  border: 2px solid rgb(24, 81, 73);
   border-top: transparent;
   border-left: transparent;
   position: absolute;
-  top: 16px;
+  top: 14px;
   left: 18px;
   transform: rotate(45deg);
 }
@@ -70,18 +66,20 @@ body {
 
 .lorem {
   width: 90%;
-  padding: 3rem;
+  padding: 1.7rem;
   margin: auto;
-  font-family: "Andika", sans-serif;
-  font-weight: 500;
   color: #333;
 }
 
 .lorem h1 {
+  font-size: 2rem;
+  font-family: "Fjalla One", sans-serif;
   margin-bottom: 2rem;
+  border-bottom: 3px solid rgb(24, 81, 73);
 }
 
 .lorem p {
+  font-family: "Libre Baskerville", sans-serif;
   font-size: 1.1rem;
   text-align: justify;
   text-indent: 2rem;
@@ -92,6 +90,7 @@ body {
   margin-bottom: 0.8rem;
 }
 
+/* scrollbar */
 ::-webkit-scrollbar {
   width: auto;
   background: transparent;

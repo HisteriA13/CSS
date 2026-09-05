@@ -21,7 +21,7 @@ Each folder in this repository contains an individual solo project with its own 
 |                                                                                | [./cssIn30Days/](./cssIn30Days/)                 | Collection of Mini Projects                |    Clipping images, Box-shadow effect, Typography    | ⏳ In progress |
 | [Background Image Text](https://histeria13.github.io/CSS/backgroundImageText/) | [./backgroundImageText/](./backgroundImageText/) | Background Image Text                      |                   Background-clip                    | ✅ Completed   |
 | [Lightbulb](https://histeria13.github.io/CSS/lightBulb/)                       | [./lightBulb/](./lightBulb/)                     | Light Bulb Toggle                          |          Positioning, ::before and ::after           | ✅ Completed   |
-| [Custom Scroll Effects](https://histeria13.github.io/CSS/customScrollEffects/) | [./customScrollEffects/](./customScrollEffects/) | Fade out, bouncing arrow, custom scrollbar |                                                      | ⏳ In progress |
+| [Custom Scroll Effects](https://histeria13.github.io/CSS/customScrollEffects/) | [./customScrollEffects/](./customScrollEffects/) | Fade out, bouncing arrow, custom scrollbar |    Various scroll effects, `scroll`, `pageOffset`    | ✅ Completed   |
 
 ---
 
