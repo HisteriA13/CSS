@@ -40,14 +40,16 @@ body {
   width: 150px;
   height: 50px;
   font-size: 1.1rem;
+  outline: none;
   cursor: pointer;
-  transition: transform 0.5s linear;
+  /* transition: ease; */
 }
 
-.btn:hover {
+/* .btn:hover {
   transform: scale(1.1);
-}
+} */
 
+/* BUTTON ONE */
 .btnOne {
   background-color: #171b30;
   color: #fff;
@@ -57,4 +59,16 @@ body {
 
 .btnOne:hover {
   border-image: linear-gradient(to left, #0066ff, #ff32d6) 1;
+}
+
+/* BUTTON TWO */
+.btnTwo {
+  background: crimson;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
+}
+.btnTwo:hover {
+  border: none;
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.6);
 }
