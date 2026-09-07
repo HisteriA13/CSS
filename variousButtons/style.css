@@ -107,6 +107,7 @@ CONIC-GRADIENT
   color: #fff;
   border: none;
   outline: none;
+  transform: scale(1.1);
 }
 
 .btnThreeContainer:hover {
@@ -114,7 +115,7 @@ CONIC-GRADIENT
 }
 
 .btnThreeContainer:hover .btnThree {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 @keyframes spin {
