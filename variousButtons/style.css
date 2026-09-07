@@ -16,32 +16,28 @@
 }
 
 body {
-  position: relative;
-  min-height: 100dvh;
   width: 100%;
+  min-height: 100dvh;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: black;
-}
-
-header {
-  margin-bottom: 1rem;
+  background: rgba(0, 0, 0, 0.94);
 }
 
 .container {
   width: 90%;
-  max-width: 800px;
+  max-width: 1000px;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  padding: 2rem;
-  gap: 1.5rem;
-  border: 2px solid #fff;
+  gap: 1rem;
+  padding: 1rem;
+  /* border: 2px solid #fff; */
 }
 
 .btn {
@@ -50,21 +46,20 @@ header {
   font-size: 1.1rem;
   outline: none;
   cursor: pointer;
-  /* transition: ease; */
 }
 
-/* .btn:hover {
-  transform: scale(1.1);
-} */
+.btn:not(.btnOne) {
+  border: none;
+}
 
 /* BUTTON ONE
 BACKGROUND-IMAGE
  */
 .btnOne {
-  background-color: #171b30;
-  color: #fff;
-  border-width: 0.3rem;
+  background: #171b30;
+  color: whitesmoke;
   border-image: linear-gradient(to right, #0066ff, #ff32d6) 1;
+  border-width: 0.3rem;
 }
 
 .btnOne:hover,
@@ -135,7 +130,7 @@ CONIC-GRADIENT
 }
 
 /* BUTTON FOUR
-
+::BEFORE SLIDE
 */
 
 .btnFour {
@@ -164,4 +159,44 @@ CONIC-GRADIENT
 
 .btnFour:hover::before {
   width: 100%;
+}
+
+/* BUTTON FIVE
+ */
+
+.btnFive {
+  position: relative;
+  border: none;
+  outline: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btnFive::before,
+.btnFive::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #343434;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+
+.btnFive::after {
+  top: 100%;
+}
+
+.btnFive:hover {
+  color: #fff;
+}
+
+.btnFive:hover::before {
+  top: 0;
+}
+
+.btnFive:hover::after {
+  top: 50%;
 }
