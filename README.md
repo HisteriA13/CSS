@@ -22,6 +22,7 @@ Each folder in this repository contains an individual solo project with its own 
 | [Background Image Text](https://histeria13.github.io/CSS/backgroundImageText/) | [./backgroundImageText/](./backgroundImageText/) | Background Image Text                      |                   Background-clip                    | ✅ Completed   |
 | [Lightbulb](https://histeria13.github.io/CSS/lightBulb/)                       | [./lightBulb/](./lightBulb/)                     | Light Bulb Toggle                          |          Positioning, ::before and ::after           | ✅ Completed   |
 | [Custom Scroll Effects](https://histeria13.github.io/CSS/customScrollEffects/) | [./customScrollEffects/](./customScrollEffects/) | Fade out, bouncing arrow, custom scrollbar |    Various scroll effects, `scroll`, `pageOffset`    | ✅ Completed   |
+| [Various Buttons](https://histeria13.github.io/CSS/variousButtons/)            | [./variousButtons/](./variousButtons/)           | Various Button Hover Effects               |                   Styling buttons                    | ⏳ In progress |
 
 ---
 
