@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --btn-bg-color: #171b30;
+  --btn-color: whitesmoke;
+  --blue: #0066ff;
+  --pink: #ff32d6;
+}
+
 #logo {
   position: absolute;
   top: 0;
@@ -43,57 +50,66 @@ body {
 .btn {
   width: 150px;
   height: 60px;
+  background: var(--btn-bg-color);
+  color: var(--btn-color);
   font-size: 1.1rem;
   outline: none;
   cursor: pointer;
+  position: relative;
 }
 
 .btn:not(.btnOne) {
   border: none;
 }
 
+.btn:hover:not(.btnOne),
+.btn:focus:not(.btnOne) {
+  border: none;
+  outline: none;
+}
+
 /* BUTTON ONE
 BACKGROUND-IMAGE
  */
 .btnOne {
-  background: #171b30;
-  color: whitesmoke;
-  border-image: linear-gradient(to right, #0066ff, #ff32d6) 1;
+  border-image: linear-gradient(to right, var(--blue), var(--pink)) 1;
   border-width: 0.3rem;
 }
 
 .btnOne:hover,
 .btnOne:focus {
-  border-image: linear-gradient(to left, #0066ff, #ff32d6) 1;
+  border-image: linear-gradient(to left, var(--blue), var(--pink)) 1;
 }
 
 /* BUTTON TWO
 BOW-SHADOW
  */
 .btnTwo {
-  background: crimson;
-  color: #fff;
-  border: none;
-  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
+  background: var(--blue);
+  box-shadow: 0 0 5px 5px var(--pink);
 }
 .btnTwo:hover,
 .btnTwo:focus {
-  border: none;
-  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 5px 5px rgba(255, 50, 214, 0.6);
 }
 
 /* BUTTON THREE
 CONIC-GRADIENT
  */
 .btnThreeContainer {
+  width: 150px;
+  height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 55px;
   padding: 1em;
-  background-image: conic-gradient(from var(--angle), red, blue, red);
-  /* animation: 1.5s spin linear infinite; */
+  background-image: conic-gradient(
+    from var(--angle),
+    var(--pink),
+    var(--blue),
+    var(--pink)
+  );
+  animation: spin 1.5s linear infinite;
 }
 
 @property --angle {
@@ -105,15 +121,11 @@ CONIC-GRADIENT
 .btnThree {
   width: 100%;
   height: 35px;
-  background: #1e1a2b;
-  color: #fff;
-  border: none;
-  outline: none;
   transform: scale(1.1);
 }
 
 .btnThreeContainer:hover {
-  animation: 1.5s spin linear infinite reverse;
+  animation: spin 1.5s linear infinite reverse;
 }
 
 .btnThreeContainer:hover .btnThree {
@@ -134,11 +146,8 @@ CONIC-GRADIENT
 */
 
 .btnFour {
-  background: #fff;
-  position: relative;
+  background: var(--btn-bg-color);
   z-index: 1;
-  border: none;
-  outline: none;
 }
 
 .btnFour::before {
@@ -148,26 +157,21 @@ CONIC-GRADIENT
   left: 0;
   width: 0;
   height: 100%;
-  background: crimson;
+  background: var(--pink);
   z-index: -1;
   transition: width 0.7s ease-out;
 }
 
-.btnFour:hover {
-  color: #f3f3f3;
-}
-
-.btnFour:hover::before {
+.btnFour:hover::before,
+.btnFour:focus::before {
   width: 100%;
 }
 
 /* BUTTON FIVE
+HALF SLIDE FROM BOTH SIDES
  */
 
 .btnFive {
-  position: relative;
-  border: none;
-  outline: none;
   z-index: 1;
   overflow: hidden;
 }
@@ -180,17 +184,13 @@ CONIC-GRADIENT
   left: 0;
   width: 100%;
   height: 50%;
-  background: #343434;
+  background: var(--blue);
   z-index: -1;
   transition: all 0.5s linear;
 }
 
 .btnFive::after {
   top: 100%;
-}
-
-.btnFive:hover {
-  color: #fff;
 }
 
 .btnFive:hover::before {
