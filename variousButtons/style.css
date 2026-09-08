@@ -144,7 +144,6 @@ CONIC-GRADIENT
 /* BUTTON FOUR
 ::BEFORE SLIDE
 */
-
 .btnFour {
   background: var(--btn-bg-color);
   z-index: 1;
@@ -170,7 +169,6 @@ CONIC-GRADIENT
 /* BUTTON FIVE
 HALF SLIDE FROM BOTH SIDES
  */
-
 .btnFive {
   z-index: 1;
   overflow: hidden;
@@ -199,4 +197,32 @@ HALF SLIDE FROM BOTH SIDES
 
 .btnFive:hover::after {
   top: 50%;
+}
+
+/* BUTTON SIX
+::BEFORE SLIDE FROM BOTTOM
+*/
+.btnSix {
+  background: var(--pink);
+  position: relative;
+  overflow: hidden;
+}
+
+.btnSix::before {
+  content: "Hovered!";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform 0.7s ease;
+}
+
+.btnSix:hover::before {
+  transform: translateY(0);
 }
