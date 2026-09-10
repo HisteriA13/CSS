@@ -6,11 +6,17 @@
   box-sizing: border-box;
 }
 
+*::before,
+*::after {
+  content: "";
+  position: absolute;
+}
+
 :root {
   --btn-bg-color: #171b30;
   --btn-color: whitesmoke;
-  --blue: #0066ff;
-  --pink: #ff32d6;
+  --blue: rgb(0, 102, 255);
+  --pink: rgb(255, 50, 214);
 }
 
 #logo {
@@ -30,7 +36,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.94);
+  background: whitesmoke;
 }
 
 .container {
@@ -42,7 +48,7 @@ body {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem 1rem;
   padding: 1rem;
   /* border: 2px solid #fff; */
 }
@@ -151,8 +157,6 @@ CONIC-GRADIENT
 }
 
 .btnFour::before {
-  content: "";
-  position: absolute;
   top: 0;
   left: 0;
   width: 0;
@@ -176,8 +180,6 @@ HALF SLIDE FROM BOTH SIDES
 
 .btnFive::before,
 .btnFive::after {
-  content: "";
-  position: absolute;
   top: -50%;
   left: 0;
   width: 100%;
@@ -210,7 +212,6 @@ HALF SLIDE FROM BOTH SIDES
 
 .btnSix::before {
   content: "Hovered!";
-  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -233,13 +234,11 @@ HALF SLIDE FROM BOTH SIDES
 */
 .btnSeven::before,
 .btnSeven::after {
-  content: "";
   left: 0;
-  position: absolute;
   width: 100%;
-  height: 2px;
+  height: 5px;
   transform: scaleX(0);
-  transition: 1s linear;
+  transition: 0.5s linear;
 }
 
 .btnSeven::before {
@@ -259,4 +258,51 @@ HALF SLIDE FROM BOTH SIDES
 .btnSeven:focus::before,
 .btnSeven:focus::after {
   transform: scaleX(1);
+}
+
+/* BUTTON EIGHT
+SCALE LINES
+*/
+.btnEight {
+  overflow: visible;
+  background: var(--blue);
+}
+
+.btnEight::before,
+.btnEight::after {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.btnEight:before {
+  top: 0;
+  border-top: 2px solid var(--pink);
+  border-bottom: 2px solid var(--pink);
+  opacity: 0;
+  transform: scaleY(2);
+}
+
+.btnEight:after {
+  content: "Hovered!";
+  top: 0;
+  background: var(--pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.btnEight:hover:before,
+.btnEight:focus:before {
+  transform: scaleY(1.2);
+  opacity: 1;
+}
+
+.btnEight:hover:after,
+.btnEight:focus:after {
+  transform: scale(1);
+  z-index: 1;
 }
