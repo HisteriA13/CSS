@@ -1,6 +1,6 @@
 # City Skyline
 
-A simple HTML and CSS project created while learning responsive web design through freeCodeCamp.
+A simple HTML and CSS project created while learning responsive web design through [freeCodeCamp](https://www.freecodecamp.org/learn).
 
 ## Technologies
 
