@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: #000;
+  background: #333;
   position: relative;
 }
 
@@ -30,12 +30,14 @@ body {
   filter: brightness(0) saturate(100%) invert(54%) sepia(8%) saturate(6134%)
     hue-rotate(199deg) brightness(103%) contrast(101%);
 }
+
 .text {
   font-size: 7vw;
 }
 
 /* BACKGROUND IMAGE */
 .bcgImg {
+  margin-top: 3rem;
   letter-spacing: 0.3rem;
   font-weight: 900;
   background: url(img/background.gif);
@@ -47,13 +49,14 @@ body {
 
 /* GLOWING */
 .glowing {
+  font-family: serif;
   color: #555;
   letter-spacing: 1rem;
 }
 
 .glowing span {
   display: table-cell;
-  animation: glowing 5s linear infinite;
+  animation: glowing 4s linear infinite;
 }
 
 .glowing span:nth-child(1) {
@@ -96,12 +99,7 @@ body {
       0 0 20px var(--color-glowing),
       0 0 40px var(--color-glowing),
       0 0 80px var(--color-glowing),
-      0 0 100px var(--color-glowing),
-      0 0 120px var(--color-glowing),
-      0 0 140px var(--color-glowing),
-      0 0 200px var(--color-glowing),
-      0 0 220px var(--color-glowing),
-      0 0 240px var(--color-glowing);
+      0 0 100px var(--color-glowing);
   }
 
   5% {
@@ -118,6 +116,45 @@ body {
 
   100% {
     color: #fff;
-    filter: blur(2px);
+    filter: blur(1px);
+  }
+}
+
+/* SLIDER */
+.slider-container {
+  height: 150px;
+  color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+.slider-container span {
+  position: relative;
+  font-size: 100px;
+  animation: slide 7s ease infinite;
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    top: 0px;
+  }
+  20% {
+    top: 0;
+  }
+  25% {
+    top: -120px;
+  }
+  45% {
+    top: -120px;
+  }
+  50% {
+    top: -250px;
+  }
+  70% {
+    top: -250px;
   }
 }
