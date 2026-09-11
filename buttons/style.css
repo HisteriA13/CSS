@@ -24,8 +24,8 @@
   top: 0;
   left: 0;
   width: 10%;
-  filter: brightness(0) saturate(100%) invert(57%) sepia(20%) saturate(6852%)
-    hue-rotate(2deg) brightness(103%) contrast(103%);
+  filter: brightness(0) saturate(100%) invert(14%) sepia(90%) saturate(5317%)
+    hue-rotate(343deg) brightness(78%) contrast(111%);
 }
 
 body {
@@ -54,7 +54,7 @@ body {
 }
 
 .btn {
-  width: 150px;
+  width: 170px;
   height: 60px;
   background: var(--btn-bg-color);
   color: var(--btn-color);
@@ -394,4 +394,26 @@ CORNER ARROWS
 .btnTen:hover::after,
 .btnTen:focus::after {
   transform: scale(1.3);
+}
+
+/* BUTTON ELEVEN (11) 
+BACKGROUND CHANGE
+*/
+.btnEleven:hover,
+.btnEleven:focus {
+  animation: changeBg 4s linear infinite;
+}
+
+@keyframes changeBg {
+  0% {
+    background: var(--red);
+  }
+
+  50% {
+    background: var(--yellow);
+  }
+
+  100% {
+    background: green;
+  }
 }
