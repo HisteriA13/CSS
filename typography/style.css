@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
 
+:root {
+  --color-glowing: #a209b6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +11,14 @@
 }
 
 body {
-  height: 100dvh;
-  font-family: cursive;
+  width: 100%;
+  min-height: 100dvh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   background: #000;
-  width: 100%;
   position: relative;
 }
 
@@ -25,13 +30,94 @@ body {
   filter: brightness(0) saturate(100%) invert(54%) sepia(8%) saturate(6134%)
     hue-rotate(199deg) brightness(103%) contrast(101%);
 }
+.text {
+  font-size: 7vw;
+}
 
-.heading {
-  font-size: 10vw;
+/* BACKGROUND IMAGE */
+.bcgImg {
+  letter-spacing: 0.3rem;
   font-weight: 900;
   background: url(img/background.gif);
   background-size: cover;
   background-clip: text;
   color: transparent;
   font-family: "New Rocker", sans-serif;
+}
+
+/* GLOWING */
+.glowing {
+  color: #555;
+  letter-spacing: 1rem;
+}
+
+.glowing span {
+  display: table-cell;
+  animation: glowing 5s linear infinite;
+}
+
+.glowing span:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.glowing span:nth-child(2) {
+  animation-delay: 0.75s;
+}
+.glowing span:nth-child(3) {
+  animation-delay: 1s;
+}
+.glowing span:nth-child(4) {
+  animation-delay: 1.25s;
+}
+.glowing span:nth-child(5) {
+  animation-delay: 1.5s;
+}
+.glowing span:nth-child(6) {
+  animation-delay: 1.75s;
+}
+.glowing span:nth-child(7) {
+  animation-delay: 2s;
+}
+.glowing span:nth-child(8) {
+  animation-delay: 2.25s;
+}
+.glowing span:nth-child(9) {
+  animation-delay: 2.5s;
+}
+.glowing span:nth-child(10) {
+  animation-delay: 2.75s;
+}
+
+@keyframes glowing {
+  0% {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow:
+      0 0 10px var(--color-glowing),
+      0 0 20px var(--color-glowing),
+      0 0 40px var(--color-glowing),
+      0 0 80px var(--color-glowing),
+      0 0 100px var(--color-glowing),
+      0 0 120px var(--color-glowing),
+      0 0 140px var(--color-glowing),
+      0 0 200px var(--color-glowing),
+      0 0 220px var(--color-glowing),
+      0 0 240px var(--color-glowing);
+  }
+
+  5% {
+    color: #fff;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+
+  95% {
+    color: #fff;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+
+  100% {
+    color: #fff;
+    filter: blur(2px);
+  }
 }
