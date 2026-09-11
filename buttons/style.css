@@ -15,8 +15,8 @@
 :root {
   --btn-bg-color: #171b30;
   --btn-color: whitesmoke;
-  --blue: rgb(0, 102, 255);
-  --pink: rgb(255, 50, 214);
+  --yellow: rgb(228, 195, 8);
+  --red: rgb(206, 0, 34);
 }
 
 #logo {
@@ -36,7 +36,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: whitesmoke;
+  background: #333;
 }
 
 .container {
@@ -75,32 +75,33 @@ body {
   outline: none;
 }
 
-/* BUTTON ONE
+/* BUTTON ONE (1)
 BACKGROUND-IMAGE
  */
 .btnOne {
-  border-image: linear-gradient(to right, var(--blue), var(--pink)) 1;
+  border-image: linear-gradient(to right, var(--yellow), var(--red)) 1;
   border-width: 0.3rem;
 }
 
 .btnOne:hover,
 .btnOne:focus {
-  border-image: linear-gradient(to left, var(--blue), var(--pink)) 1;
+  border-image: linear-gradient(to left, var(--yellow), var(--red)) 1;
 }
 
-/* BUTTON TWO
+/* BUTTON TWO (2)
 BOW-SHADOW
  */
 .btnTwo {
-  background: var(--blue);
-  box-shadow: 0 0 5px 5px var(--pink);
+  color: var(--btn-bg-color);
+  background: var(--yellow);
+  box-shadow: 0 0 5px 5px var(--red);
 }
 .btnTwo:hover,
 .btnTwo:focus {
-  box-shadow: 0 0 5px 5px rgba(255, 50, 214, 0.6);
+  box-shadow: 0 0 5px 5px rgba(206, 0, 34, 0.6);
 }
 
-/* BUTTON THREE
+/* BUTTON THREE (3)
 CONIC-GRADIENT
  */
 .btnThreeContainer {
@@ -112,9 +113,9 @@ CONIC-GRADIENT
   padding: 1em;
   background-image: conic-gradient(
     from var(--angle),
-    var(--pink),
-    var(--blue),
-    var(--pink)
+    var(--red),
+    var(--yellow),
+    var(--red)
   );
   animation: spin 1.5s linear infinite;
 }
@@ -128,6 +129,7 @@ CONIC-GRADIENT
 .btnThree {
   width: 100%;
   height: 35px;
+  font-size: 0.9rem;
   transform: scale(1.1);
 }
 
@@ -148,7 +150,7 @@ CONIC-GRADIENT
   }
 }
 
-/* BUTTON FOUR
+/* BUTTON FOUR (4)
 ::BEFORE SLIDE
 */
 .btnFour {
@@ -161,7 +163,7 @@ CONIC-GRADIENT
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--pink);
+  background: var(--red);
   z-index: -1;
   transition: width 0.7s ease-out;
 }
@@ -171,7 +173,7 @@ CONIC-GRADIENT
   width: 100%;
 }
 
-/* BUTTON FIVE
+/* BUTTON FIVE (5)
 HALF SLIDE FROM BOTH SIDES
  */
 .btnFive {
@@ -184,7 +186,7 @@ HALF SLIDE FROM BOTH SIDES
   left: 0;
   width: 100%;
   height: 50%;
-  background: var(--blue);
+  background: var(--yellow);
   z-index: -1;
   transition: all 0.5s linear;
 }
@@ -203,11 +205,11 @@ HALF SLIDE FROM BOTH SIDES
   top: 50%;
 }
 
-/* BUTTON SIX
+/* BUTTON SIX (6)
 ::BEFORE SLIDE FROM BOTTOM
 */
 .btnSix {
-  background: var(--pink);
+  background: var(--red);
 }
 
 .btnSix::before {
@@ -216,7 +218,8 @@ HALF SLIDE FROM BOTH SIDES
   top: 0;
   width: 100%;
   height: 100%;
-  background: var(--blue);
+  color: var(--btn-bg-color);
+  background: var(--yellow);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,7 +232,7 @@ HALF SLIDE FROM BOTH SIDES
   transform: translateY(0);
 }
 
-/* BUTTON SEVEN
+/* BUTTON SEVEN (7)
 ::BEFORE AND ::AFTER SLIDE LINES
 */
 .btnSeven::before,
@@ -243,13 +246,13 @@ HALF SLIDE FROM BOTH SIDES
 
 .btnSeven::before {
   top: 0;
-  background: var(--blue);
+  background: var(--yellow);
   transform-origin: left;
 }
 
 .btnSeven::after {
   bottom: 0;
-  background: var(--pink);
+  background: var(--red);
   transform-origin: right;
 }
 
@@ -260,16 +263,18 @@ HALF SLIDE FROM BOTH SIDES
   transform: scaleX(1);
 }
 
-/* BUTTON EIGHT
+/* BUTTON EIGHT (8)
 SCALE LINES
 */
 .btnEight {
+  color: var(--btn-bg-color);
   overflow: visible;
-  background: var(--blue);
+  background: var(--yellow);
 }
 
 .btnEight::before,
 .btnEight::after {
+  color: var(--btn-color);
   top: 0;
   left: 0;
   width: 100%;
@@ -278,15 +283,15 @@ SCALE LINES
 }
 
 .btnEight:before {
-  border-top: 2px solid var(--pink);
-  border-bottom: 2px solid var(--pink);
+  border-top: 2px solid var(--red);
+  border-bottom: 2px solid var(--red);
   opacity: 0;
   transform: scaleY(2);
 }
 
 .btnEight:after {
   content: "Hovered!";
-  background: var(--pink);
+  background: var(--red);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,7 +311,7 @@ SCALE LINES
   z-index: 1;
 }
 
-/* BUTTON NINE
+/* BUTTON NINE (9)
 DOUBLE COVER
  */
 /* UNCOMMENT THIS LINE ⬇️ FOR ANOTHER EFFECT */
@@ -330,12 +335,12 @@ DOUBLE COVER
 
 .btnNine::before {
   content: "Cover One (1)";
-  background: var(--pink);
+  background: var(--red);
 }
 
 .btnNine::after {
   content: "Cover Two (2)";
-  background: var(--blue);
+  background: var(--yellow);
   transition-delay: 0.5s;
 }
 
@@ -344,4 +349,49 @@ DOUBLE COVER
 .btnNine:hover::after,
 .btnNine:focus::after {
   transform: rotateX(0);
+}
+
+/* BUTTON TEN (10)
+CORNER ARROWS
+*/
+
+.btnTen {
+  overflow: visible;
+  transition: 0.3s;
+}
+
+.btnTen::before,
+.btnTen::after {
+  width: 13px;
+  height: 13px;
+  transform: scale(0);
+  transition: 0.7s;
+}
+
+.btnTen::before {
+  top: -5px;
+  left: -5px;
+  border: 3px solid var(--red);
+  /* one way */
+  border-right: transparent;
+  border-bottom: transparent;
+}
+
+.btnTen::after {
+  bottom: -5px;
+  right: -5px;
+  border: 3px solid var(--yellow);
+  /* other way */
+  border-width: 0 3px 3px 0;
+}
+
+.btnTen:hover,
+.btnTen:focus {
+  transform: scale(0.98);
+}
+.btnTen:hover::before,
+.btnTen:focus::before,
+.btnTen:hover::after,
+.btnTen:focus::after {
+  transform: scale(1.3);
 }
