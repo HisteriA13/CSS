@@ -18,10 +18,10 @@ Each folder in this repository contains an individual solo project with its own 
 | :----------------------------------------------------------------------------- | :----------------------------------------------- | :----------------------------------------- | :--------------------------------------------------: | -------------- |
 | [Skyline](https://histeria13.github.io/CSS/skyline/)                           | [./skyline/](./skyline/)                         | City Skyline                               |          Media queries, Flexbox, Gradients           | ✅ Completed   |
 | [Little Taco Shop](https://histeria13.github.io/CSS/littleTacoShop/)           | [./littleTacoShop/](./littleTacoShop/)           | Restaurant Page                            | Dark mode support, Animations, Accessible navigation | ✅ Completed   |
-| [Background Image Text](https://histeria13.github.io/CSS/backgroundImageText/) | [./backgroundImageText/](./backgroundImageText/) | Background Image Text                      |                   Background-clip                    | ✅ Completed   |
+| [Typography](https://histeria13.github.io/CSS/typography/)                     | [./typography/](./typography/)                   | Text styles                                |                   Background-clip                    | ⏳ In progress |
 | [Lightbulb](https://histeria13.github.io/CSS/lightBulb/)                       | [./lightBulb/](./lightBulb/)                     | Light Bulb Toggle                          |          Positioning, ::before and ::after           | ✅ Completed   |
 | [Custom Scroll Effects](https://histeria13.github.io/CSS/customScrollEffects/) | [./customScrollEffects/](./customScrollEffects/) | Fade out, bouncing arrow, custom scrollbar |    Various scroll effects, `scroll`, `pageOffset`    | ✅ Completed   |
-| [Various Buttons](https://histeria13.github.io/CSS/variousButtons/)            | [./variousButtons/](./variousButtons/)           | Various Button Hover Effects               |                   Styling buttons                    | ⏳ In progress |
+| [Buttons](https://histeria13.github.io/CSS/buttons/)                           | [./buttons/](./buttons/)                         | Various Button Hover Effects               |                   Styling buttons                    | ⏳ In progress |
 
 ---
 

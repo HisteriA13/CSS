@@ -1,6 +1,6 @@
-# Background Image Text
+# Typography
 
-A responsive HTML and CSS project with background image on text.
+Text styles
 
 ## Technologies
 

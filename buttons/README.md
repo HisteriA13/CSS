@@ -1,4 +1,4 @@
-# Various Buttons
+# Buttons
 
 Various button stylings and hover effects
 
