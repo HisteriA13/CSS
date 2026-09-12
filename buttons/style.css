@@ -490,3 +490,23 @@ SIMPLE TRANSLATE-X
     transform: translateX(0);
   }
 }
+
+/* BUTTON FOURTEEN
+PULSE SHADOW
+ */
+.btnFourteen:hover,
+.btnFourteen:focus {
+  animation: pulse 1.2s ease-in 2;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 2px rgb(228, 195, 8);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgb(206, 0, 34);
+  }
+}
