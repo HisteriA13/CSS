@@ -354,7 +354,6 @@ DOUBLE COVER
 /* BUTTON TEN (10)
 CORNER ARROWS
 */
-
 .btnTen {
   overflow: visible;
   transition: 0.3s;
@@ -416,4 +415,57 @@ BACKGROUND CHANGE
   100% {
     background: green;
   }
+}
+/* BUTTON TWELVE (12)
+OPEN COVERS
+*/
+.btnTwelveContainer {
+  position: relative;
+  isolation: isolate;
+}
+
+.btnTwelve {
+  color: var(--btn-bg-color);
+  overflow: visible;
+  background: transparent;
+}
+
+.btnTwelve::before,
+.btnTwelve::after {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  transition: all 0.5s;
+}
+
+.btnTwelve::before {
+  top: -3px;
+  left: -3px;
+  background: rgb(206, 0, 34, 0.7);
+  transform-origin: top;
+}
+
+.btnTwelve::after {
+  top: 3px;
+  left: 3px;
+  background: rgba(228, 195, 8, 0.7);
+  transform-origin: bottom;
+}
+
+.btnTwelve:hover {
+  color: var(--btn-color);
+}
+
+.btnTwelve:hover::before,
+.btnTwelve:focus::before {
+  top: -6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(75deg);
+}
+
+.btnTwelve:hover::after,
+.btnTwelve:focus::after {
+  top: 6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(-75deg);
 }
