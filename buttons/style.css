@@ -188,11 +188,12 @@ HALF SLIDE FROM BOTH SIDES
   height: 50%;
   background: var(--yellow);
   z-index: -1;
-  transition: all 0.5s linear;
+  transition: 0.5s linear;
 }
 
 .btnFive::after {
   top: 100%;
+  background: var(--red);
 }
 
 .btnFive:hover::before,
@@ -407,13 +408,8 @@ BACKGROUND CHANGE
   0% {
     background: var(--red);
   }
-
-  50% {
-    background: var(--yellow);
-  }
-
   100% {
-    background: green;
+    background: var(--yellow);
   }
 }
 /* BUTTON TWELVE (12)
@@ -421,6 +417,7 @@ OPEN COVERS
 */
 .btnTwelveContainer {
   position: relative;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/isolation */
   isolation: isolate;
 }
 
@@ -452,7 +449,8 @@ OPEN COVERS
   transform-origin: bottom;
 }
 
-.btnTwelve:hover {
+.btnTwelve:hover,
+.btnTwelve:focus {
   color: var(--btn-color);
 }
 
