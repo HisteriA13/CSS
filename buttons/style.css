@@ -467,3 +467,26 @@ OPEN COVERS
   left: 0;
   transform: perspective(1000px) rotateX(-75deg);
 }
+
+/* BUTTON THIRTEEN (13)
+SIMPLE TRANSLATE-X
+ */
+.btnThirteen:hover,
+.btnThirteen:focus {
+  animation: move 0.7s linear 2;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
