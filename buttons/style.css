@@ -549,3 +549,21 @@ BREATHE SHADOW
     box-shadow: 0 0 5px rgba(228, 195, 8, 0.4);
   }
 }
+
+/* BUTTON SIXTEEN (16)
+BOTTOM MIDDLE LINE SCALE
+*/
+.btnSixteen::before {
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background: var(--yellow);
+  transition: 0.5s linear;
+}
+
+.btnSixteen:hover::before,
+.btnSixteen:focus::before {
+  transform: translateX(-50%) scale(1);
+}
