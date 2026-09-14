@@ -38,10 +38,11 @@ body {
   align-items: center;
   row-gap: 2rem;
   background: #333;
+  padding-top: 50px;
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   height: 100%;
   display: flex;
@@ -66,12 +67,12 @@ body {
   overflow: hidden;
 }
 
-.btn:not(.btnOne) {
+.btn:not(.btnOne, .btnNineteen) {
   border: none;
 }
 
-.btn:hover:not(.btnOne),
-.btn:focus:not(.btnOne) {
+.btn:hover:not(.btnOne, .btnNineteen),
+.btn:focus:not(.btnOne, .btnNineteen) {
   border: none;
   outline: none;
 }
@@ -691,4 +692,19 @@ SPAN LINEAR BORDERLINES
 .btnEighteen:hover span::after,
 .btnEighteen:focus span::after {
   height: 100%;
+}
+
+/* BUTTON NINETEEN (19)
+
+*/
+.btnNineteen {
+  border: 5px solid var(--red);
+  transition: 0.3s linear;
+}
+
+.btnNineteen:hover,
+.btnNineteen:focus {
+  border-color: var(--yellow);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--yellow);
+  transform: translateY(-0.25em);
 }
