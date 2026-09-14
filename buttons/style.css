@@ -768,3 +768,31 @@ LINEAR-GRADIENT
 .btnTwentyOne:focus {
   background-position: right;
 }
+
+/* BUTTON TWENTY TWO (22)
+ICON SLIDE
+*/
+.btnTwentyTwo span {
+  position: relative;
+  transition: 0.5s ease-in;
+}
+
+.btnTwentyTwo span i {
+  position: absolute;
+  right: -1.3rem;
+  font-size: 1.2rem;
+  color: var(--red);
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+.btnTwentyTwo:hover span,
+.btnTwentyTwo:focus span {
+  padding-right: 1.3rem;
+}
+
+.btnTwentyTwo:hover i,
+.btnTwentyTwo:focus i {
+  right: 0;
+  opacity: 1;
+}
