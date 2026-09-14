@@ -14,7 +14,7 @@
 
 :root {
   --btn-bg-color: #171b30;
-  --btn-color: whitesmoke;
+  --btn-color: #fff8dc;
   --yellow: rgb(228, 195, 8);
   --red: rgb(206, 0, 34);
 }
@@ -387,10 +387,6 @@ CORNER ARROWS
   border-width: 0 3px 3px 0;
 }
 
-.btnTen:hover,
-.btnTen:focus {
-  transform: scale(0.98);
-}
 .btnTen:hover::before,
 .btnTen:focus::before,
 .btnTen:hover::after,
@@ -494,7 +490,7 @@ SIMPLE TRANSLATE-X
   }
 }
 
-/* BUTTON FOURTEEN
+/* BUTTON FOURTEEN (14)
 PULSE SHADOW
  */
 .btnFourteen:hover,
@@ -752,4 +748,23 @@ BEHIND SHADOW
 
 .btnTwenty:hover .top {
   transform: rotateX(0deg) translateZ(30px);
+}
+
+/* BUTTON TWENTY ONE (21)
+LINEAR-GRADIENT
+*/
+.btnTwentyOne {
+  background: linear-gradient(
+    to right,
+    var(--yellow) 0%,
+    var(--red) 51%,
+    var(--yellow) 100%
+  );
+  background-size: 200% auto;
+  transition: 0.7s ease;
+}
+
+.btnTwentyOne:hover,
+.btnTwentyOne:focus {
+  background-position: right;
 }
