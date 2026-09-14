@@ -695,7 +695,7 @@ SPAN LINEAR BORDERLINES
 }
 
 /* BUTTON NINETEEN (19)
-
+BEHIND SHADOW
 */
 .btnNineteen {
   border: 5px solid var(--red);
@@ -707,4 +707,49 @@ SPAN LINEAR BORDERLINES
   border-color: var(--yellow);
   box-shadow: 0 0.5em 0.5em -0.4em var(--yellow);
   transform: translateY(-0.25em);
+}
+
+/* BUTTON TWENTY (20)
+3D
+*/
+.btnTwenty {
+  position: relative;
+  width: 160px;
+  height: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.btnTwenty .top,
+.btnTwenty .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.btnTwenty .front {
+  background: var(--red);
+  transform: translateZ(30px);
+}
+
+.btnTwenty .top {
+  background: var(--yellow);
+  color: var(--btn-bg-color);
+  transform: rotateX(90deg) translateZ(30px);
+}
+
+.btnTwenty:hover .front {
+  transform: rotateX(-90deg) translateZ(30px);
+}
+
+.btnTwenty:hover .top {
+  transform: rotateX(0deg) translateZ(30px);
 }
