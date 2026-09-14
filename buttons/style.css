@@ -627,3 +627,68 @@ SPAN BORDERLINES
 .btnSeventeen:focus span::after {
   height: 100%;
 }
+
+/* BUTTON EIGHTEEN (18)
+SPAN LINEAR BORDERLINES
+*/
+/* mix of btnSeven and btnSeventeen */
+.btnEighteen span::before,
+.btnEighteen span::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 0%;
+  transition: height 0.5s linear;
+}
+
+.btnEighteen span::before {
+  left: 0;
+  bottom: 0;
+  background: var(--yellow);
+  transition-delay: 0s;
+}
+
+.btnEighteen span::after {
+  top: 0;
+  right: 0;
+  background: var(--red);
+  transition-delay: 1s;
+}
+
+/* used btnSeven style for top and bottom line */
+.btnEighteen::before,
+.btnEighteen::after {
+  left: 0;
+  width: 100%;
+  height: 5px;
+  transform: scaleX(0);
+  transition: 0.5s linear;
+}
+
+.btnEighteen::before {
+  top: 0;
+  background: var(--red);
+  transform-origin: left;
+  transition-delay: 0.5s;
+}
+
+.btnEighteen::after {
+  bottom: 0;
+  background: var(--yellow);
+  transform-origin: right;
+  transition-delay: 1.5s;
+}
+
+.btnEighteen:hover::before,
+.btnEighteen:hover::after,
+.btnEighteen:focus::before,
+.btnEighteen:focus::after {
+  transform: scaleX(1);
+}
+
+.btnEighteen:hover span::before,
+.btnEighteen:focus span::before,
+.btnEighteen:hover span::after,
+.btnEighteen:focus span::after {
+  height: 100%;
+}
