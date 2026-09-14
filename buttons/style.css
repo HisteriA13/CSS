@@ -567,3 +567,63 @@ BOTTOM MIDDLE LINE SCALE
 .btnSixteen:focus::before {
   transform: translateX(-50%) scale(1);
 }
+
+/* BUTTON SEVENTEEN (17)
+SPAN BORDERLINES
+*/
+.btnSeventeen span::before,
+.btnSeventeen span::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 0%;
+  transition: height 0.5s linear;
+}
+
+.btnSeventeen span::before {
+  left: 0;
+  bottom: 0;
+  background: var(--yellow);
+}
+
+.btnSeventeen span::after {
+  top: 0;
+  right: 0;
+  background: var(--red);
+}
+
+/* used btnSeven style for top and bottom line */
+.btnSeventeen::before,
+.btnSeventeen::after {
+  left: 0;
+  width: 100%;
+  height: 5px;
+  transform: scaleX(0);
+  transition: 0.5s linear;
+}
+
+.btnSeventeen::before {
+  top: 0;
+  background: var(--red);
+  transform-origin: left;
+}
+
+.btnSeventeen::after {
+  bottom: 0;
+  background: var(--yellow);
+  transform-origin: right;
+}
+
+.btnSeventeen:hover::before,
+.btnSeventeen:hover::after,
+.btnSeventeen:focus::before,
+.btnSeventeen:focus::after {
+  transform: scaleX(1);
+}
+
+.btnSeventeen:hover span::before,
+.btnSeventeen:focus span::before,
+.btnSeventeen:hover span::after,
+.btnSeventeen:focus span::after {
+  height: 100%;
+}
