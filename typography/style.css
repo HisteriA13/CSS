@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
 
 :root {
-  --color-glowing: #a209b6;
+  --color-glowing: #d3114f;
 }
 
 * {
@@ -32,7 +32,7 @@ body {
 }
 
 .text {
-  font-size: 7vw;
+  font-size: 6vw;
 }
 
 /* BACKGROUND IMAGE */
@@ -121,7 +121,7 @@ body {
 }
 
 /* SLIDER */
-.slider-container {
+/* .slider-container {
   height: 150px;
   color: lightblue;
   display: flex;
@@ -156,5 +156,24 @@ body {
   }
   70% {
     top: -250px;
+  }
+} */
+
+/* WAVE */
+.wave span {
+  display: inline-block;
+  color: lightseagreen;
+  animation: wave 2s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes wave {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
   }
 }
