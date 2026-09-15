@@ -177,3 +177,23 @@ body {
     transform: translateY(-20px);
   }
 }
+
+/* COLOR CHANGE */
+.color-change p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 0.4em;
+  color: transparent;
+  /* change color for another color palette animation */
+  -webkit-text-stroke: 2px darkorange;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  10% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(720deg);
+  }
+}
