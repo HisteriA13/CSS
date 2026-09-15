@@ -832,3 +832,27 @@ CORNERS STRECH
   width: 100%;
   height: 100%;
 }
+
+/* BUTTON TWENTY FOUR (24)
+RIGHT TO LEFT SLIDE
+*/
+.btnTwentyFour span {
+  mix-blend-mode: difference;
+}
+
+.btnTwentyFour::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.7s;
+}
+
+.btnTwentyFour:hover::before,
+.btnTwentyFour:focus::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
