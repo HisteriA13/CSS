@@ -106,6 +106,12 @@ BOW-SHADOW
 /* BUTTON THREE (3)
 CONIC-GRADIENT
  */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 .btnThreeContainer {
   width: 150px;
   height: 55px;
@@ -120,12 +126,6 @@ CONIC-GRADIENT
     var(--red)
   );
   animation: spin 1.5s linear infinite;
-}
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
 }
 
 .btnThree {

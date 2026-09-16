@@ -8,6 +8,8 @@ The goal of this repository is to track my personal growth, apply core theoretic
 
 - **Markup & Styling:** HTML, CSS
 
+- **Language:** JavaScript
+
 - **Development Environment:** VS Code, Git / GitHub, WSL
 
 ## 📂 Repository Structure & Projects
@@ -21,7 +23,7 @@ Each folder in this repository contains an individual solo project with its own 
 | [Typography](https://histeria13.github.io/CSS/typography/)                     | [./typography/](./typography/)                   | Text styles                                |                   Background-clip                    | ⏳ In progress |
 | [Lightbulb](https://histeria13.github.io/CSS/lightBulb/)                       | [./lightBulb/](./lightBulb/)                     | Light Bulb Toggle                          |          Positioning, ::before and ::after           | ✅ Completed   |
 | [Custom Scroll Effects](https://histeria13.github.io/CSS/customScrollEffects/) | [./customScrollEffects/](./customScrollEffects/) | Fade out, bouncing arrow, custom scrollbar |    Various scroll effects, `scroll`, `pageOffset`    | ✅ Completed   |
-| [Buttons](https://histeria13.github.io/CSS/buttons/)                           | [./buttons/](./buttons/)                         | Various Button Hover Effects               |                   Styling buttons                    | ⏳ In progress |
+| [Buttons](https://histeria13.github.io/CSS/buttons/)                           | [./buttons/](./buttons/)                         | 24 Button Hover Effects                    |                   Styling buttons                    | ✅ Completed   |
 
 ---
 
