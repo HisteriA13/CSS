@@ -199,7 +199,6 @@ body {
 }
 
 /* 3D */
-
 .threeD {
   width: 100%;
 }
@@ -382,6 +381,34 @@ body {
 
 @media screen and (min-width: 700px) {
   .disappear {
-    margin: 150px 0;
+    margin: 150px 0 50px 0;
+  }
+}
+
+/* CAROUSEL */
+.carousel {
+  color: darkblue;
+}
+
+.carousel::after {
+  content: "";
+  background: red;
+  color: #fff;
+  padding: 0.6rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+  animation: codingSlide 4s infinite;
+}
+
+@keyframes codingSlide {
+  0%,
+  100% {
+    content: "fun";
+  }
+  50% {
+    content: "hard";
+  }
+  65% {
+    content: "weird";
   }
 }
