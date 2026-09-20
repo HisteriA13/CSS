@@ -10,10 +10,18 @@ Text styles
 ## Features
 
 - Responsive design
-- CSS Flexbox
-- Background-image
 - Background-clip
+- Animations
+- Transitions
+- Pseudo elements
+- CSS variables
 
 ## Screenshots
 
-<img src="screenshots/backgrounImageText.png" alt="" style="width: 400px; height: auto;">
+Index One
+
+<img src="screenshots/indexOne.png" alt="" style="width: 400px; height: auto;">
+
+Index Two
+
+<img src="screenshots/indexTwo.png" alt="" style="width: 400px; height: auto;">

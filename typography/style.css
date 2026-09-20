@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
-
 :root {
   --color-glowing: aquamarine;
 }
@@ -43,13 +41,14 @@ body {
   background: url(img/background.gif);
   background-size: cover;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
-  font-family: "New Rocker", sans-serif;
+  font-family: "New Rocker", system-ui, sans-serif;
 }
 
 /* GLOWING */
 .glowing {
-  font-family: serif;
+  font-family: "Limelight", sans-serif;
   color: #555;
   letter-spacing: 1rem;
 }
@@ -120,48 +119,10 @@ body {
   }
 }
 
-/* SLIDER */
-/* .slider-container {
-  height: 150px;
-  color: lightblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  font-family: monospace;
-}
-
-.slider-container span {
-  position: relative;
-  font-size: 100px;
-  animation: slide 7s ease infinite;
-}
-
-@keyframes slide {
-  0%,
-  100% {
-    top: 0px;
-  }
-  20% {
-    top: 0;
-  }
-  25% {
-    top: -120px;
-  }
-  45% {
-    top: -120px;
-  }
-  50% {
-    top: -250px;
-  }
-  70% {
-    top: -250px;
-  }
-} */
-
 /* WAVE */
 .wave span {
   display: inline-block;
+
   color: lightseagreen;
   animation: wave 2s infinite;
   animation-delay: calc(0.1s * var(--i));
@@ -201,6 +162,7 @@ body {
 /* 3D */
 .threeD {
   width: 100%;
+  margin-block: 2rem;
 }
 .cube {
   height: 60px;
@@ -303,6 +265,7 @@ body {
 }
 
 .disappear span {
+  font-family: "Smokum", cursive;
   display: inline-block;
   color: lightseagreen;
   text-shadow: 0px 0px 0px rgb(255, 255, 255);
@@ -381,16 +344,19 @@ body {
 
 @media screen and (min-width: 700px) {
   .disappear {
-    margin: 150px 0 50px 0;
+    margin-top: 150px;
   }
 }
 
 /* CAROUSEL */
 .carousel {
-  color: darkblue;
+  font-family: "Special Elite", cursive;
+  color: #54d3fe;
 }
 
 .carousel::after {
+  /* display: inline-block;
+  width: 14vw; */ /* uncomment for static carousel */
   content: "";
   background: red;
   color: #fff;
