@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -133,5 +133,41 @@ body {
   }
   100% {
     transform: translateY(5px);
+  }
+}
+
+/* DYNAMIC */
+.dynamic-wrapper {
+  display: flex;
+  column-gap: 0.7em;
+}
+.dynamic {
+  width: 15px;
+  height: 15px;
+  background: purple;
+  border-radius: 50%;
+  animation: dynamic 0.8s ease infinite;
+}
+
+.dynamicOne {
+  animation-delay: 0.3s;
+}
+
+.dynamicTwo {
+  animation-delay: 0.4s;
+}
+
+.dynamicThree {
+  animation-delay: 0.5s;
+}
+
+@keyframes dynamic {
+  0% {
+    width: 15px;
+    height: 15px;
+  }
+  50% {
+    width: 20px;
+    height: 20px;
   }
 }
