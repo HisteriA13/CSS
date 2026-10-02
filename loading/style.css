@@ -12,8 +12,8 @@
   left: 0;
   width: 10%;
   min-width: 60px;
-  filter: brightness(0) saturate(100%) invert(70%) sepia(12%) saturate(1035%)
-    hue-rotate(315deg) brightness(106%) contrast(78%);
+  filter: brightness(0) saturate(100%) invert(85%) sepia(62%) saturate(536%)
+    hue-rotate(99deg) brightness(89%) contrast(88%);
 }
 
 body {
@@ -36,12 +36,12 @@ body {
 
 .wrapper {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* LOADING DOT CIRCLE */
@@ -169,5 +169,39 @@ body {
   50% {
     width: 20px;
     height: 20px;
+  }
+}
+
+/* SPINNER */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  color: #075d7d;
+  box-shadow: inset -5px 0 0 5px currentColor;
+  clip-path: polygon(
+    0% 0%,
+    0 67%,
+    25% 66%,
+    25% 25%,
+    75% 25%,
+    76% 62%,
+    76% 61%,
+    76% 61%,
+    100% 61%,
+    100% 0%
+  );
+  animation: spin 1.4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    box-shadow: inset -3px 0 0 3px currentColor;
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
