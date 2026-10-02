@@ -205,3 +205,32 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* ROTATING SQUARE */
+.rotating-square {
+  width: 15px;
+  height: 15px;
+  margin: 0.5em;
+  animation: rotateSquare 1.2s infinite;
+}
+
+.rotating-squareOne {
+  background: red;
+}
+
+.rotating-squareTwo {
+  background: yellow;
+}
+
+.rotating-squareThree {
+  background: green;
+}
+
+@keyframes rotateSquare {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
