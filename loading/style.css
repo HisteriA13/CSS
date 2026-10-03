@@ -2,6 +2,7 @@
   --blue: #0000ff;
   --blue-1: #075d7d;
   --red: #ff0000;
+  --red-2: #dc143c;
   --yellow: #dcdc08;
   --green: #008000;
   --purple: #800080;
@@ -242,5 +243,51 @@ body {
   }
   to {
     transform: rotate(45deg);
+  }
+}
+
+/* SVG POLYLINE */
+.svg-polyline {
+  width: 50%;
+}
+
+.svg-polyline polyline {
+  --stroke-length: 231px;
+  --stroke-width: 4px;
+  fill: none;
+  stroke: var(--red-2);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation:
+    draw-line 2s ease-in-out 0s both,
+    clear-line 2s ease-in-out 2.1s forwards infinite;
+}
+
+@keyframes draw-line {
+  from {
+    opacity: 0;
+    stroke-dasharray: 0 var(--stroke-length);
+    stroke-width: calc(var(--stroke-width) * 0.85);
+  }
+  10%,
+  to {
+    opacity: 1;
+  }
+  to {
+    stroke-dasharray: var(--stroke-length) var(--stroke-length);
+    stroke-width: var(--stroke-width);
+  }
+}
+@keyframes clear-line {
+  from {
+    stroke-dashoffset: 0;
+  }
+  from,
+  90% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    stroke-dashoffset: calc(var(--stroke-length) * -1);
   }
 }
