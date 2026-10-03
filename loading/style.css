@@ -49,6 +49,7 @@ body {
   width: 150px;
   height: 150px;
   background: rgba(192, 192, 192, 0.236);
+  margin-inline: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,5 +290,38 @@ body {
   to {
     opacity: 0;
     stroke-dashoffset: calc(var(--stroke-length) * -1);
+  }
+}
+
+/* PROGRESS-BAR */
+.progress-bar {
+  flex-direction: column;
+  row-gap: 6%;
+}
+
+.progress-bar span {
+  width: 70px;
+  height: 10px;
+  border-radius: 15px;
+  background: linear-gradient(var(--purple) 0 0) 0 / 0% no-repeat var(--yellow);
+  animation: progress-bar 2.4s infinite;
+}
+
+.progress-bar span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.progress-bar span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes progress-bar {
+  0% {
+    background-size: 0% 100%;
+  }
+  50% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 0% 100%;
   }
 }
