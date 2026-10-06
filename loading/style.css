@@ -302,7 +302,7 @@ body {
   width: 70px;
   height: 10px;
   border-radius: 15px;
-  background: linear-gradient(var(--purple) 0 0) 0 / 0% no-repeat var(--yellow);
+  background: linear-gradient(var(--purple) 0 0) 0 / 0% no-repeat var(--red);
   animation: progress-bar 2.4s infinite;
 }
 
@@ -424,5 +424,25 @@ body {
   75% {
     height: 50px;
     background: var(--blue-1);
+  }
+}
+
+/* DOUBLE BASIC */
+.double-basic span {
+  border: 6px solid transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-top-color: var(--green);
+  border-bottom-color: var(--red-2);
+  animation: doubleBasicRotate 2s ease-in-out infinite;
+}
+
+@keyframes doubleBasicRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
