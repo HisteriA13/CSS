@@ -27,9 +27,10 @@
 }
 
 body {
-  min-height: calc(100dvh - 50px);
+  min-height: 100dvh;
   padding: 50px 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -49,11 +50,9 @@ body {
   width: 130px;
   height: 130px;
   background: rgba(192, 192, 192, 0.236);
-  margin-inline: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 /* LOADING DOT CIRCLE */
