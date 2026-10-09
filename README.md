@@ -16,15 +16,15 @@ The goal of this repository is to track my personal growth, apply core theoretic
 
 Each folder in this repository contains an individual solo project with its own source code and assets.
 
-| Live Page                                                                      | Folder / Project                                 | Description                                |                 Key Concepts Learned                 | Status         |
-| :----------------------------------------------------------------------------- | :----------------------------------------------- | :----------------------------------------- | :--------------------------------------------------: | -------------- |
-| [Skyline](https://histeria13.github.io/CSS/skyline/)                           | [./skyline/](./skyline/)                         | City Skyline                               |          Media queries, Flexbox, Gradients           | ✅ Completed   |
-| [Little Taco Shop](https://histeria13.github.io/CSS/littleTacoShop/)           | [./littleTacoShop/](./littleTacoShop/)           | Restaurant Page                            | Dark mode support, Animations, Accessible navigation | ✅ Completed   |
-| [Typography](https://histeria13.github.io/CSS/typography/)                     | [./typography/](./typography/)                   | Text styles                                |               Animations, transitions                | ✅ Completed   |
-| [Lightbulb](https://histeria13.github.io/CSS/lightBulb/)                       | [./lightBulb/](./lightBulb/)                     | Light Bulb Toggle                          |          Positioning, ::before and ::after           | ✅ Completed   |
-| [Custom Scroll Effects](https://histeria13.github.io/CSS/customScrollEffects/) | [./customScrollEffects/](./customScrollEffects/) | Fade out, bouncing arrow, custom scrollbar |    Various scroll effects, `scroll`, `pageOffset`    | ✅ Completed   |
-| [Buttons](https://histeria13.github.io/CSS/buttons/)                           | [./buttons/](./buttons/)                         | 24 Button Hover Effects                    |                   Styling buttons                    | ✅ Completed   |
-| [Loading](https://histeria13.github.io/CSS/loading/)                           | [./loading/](./loading/)                         | Loading Animations                         |                                                      | ⌛ In progress |
+| Live Page                                                                      | Folder / Project                                 | Description                                |                 Key Concepts Learned                 | Status       |
+| :----------------------------------------------------------------------------- | :----------------------------------------------- | :----------------------------------------- | :--------------------------------------------------: | ------------ |
+| [Skyline](https://histeria13.github.io/CSS/skyline/)                           | [./skyline/](./skyline/)                         | City Skyline                               |          Media queries, Flexbox, Gradients           | ✅ Completed |
+| [Little Taco Shop](https://histeria13.github.io/CSS/littleTacoShop/)           | [./littleTacoShop/](./littleTacoShop/)           | Restaurant Page                            | Dark mode support, Animations, Accessible navigation | ✅ Completed |
+| [Typography](https://histeria13.github.io/CSS/typography/)                     | [./typography/](./typography/)                   | Text styles                                |               Animations, transitions                | ✅ Completed |
+| [Lightbulb](https://histeria13.github.io/CSS/lightBulb/)                       | [./lightBulb/](./lightBulb/)                     | Light Bulb Toggle                          |          Positioning, ::before and ::after           | ✅ Completed |
+| [Custom Scroll Effects](https://histeria13.github.io/CSS/customScrollEffects/) | [./customScrollEffects/](./customScrollEffects/) | Fade out, bouncing arrow, custom scrollbar |    Various scroll effects, `scroll`, `pageOffset`    | ✅ Completed |
+| [Buttons](https://histeria13.github.io/CSS/buttons/)                           | [./buttons/](./buttons/)                         | 24 Button Hover Effects                    |                   Styling buttons                    | ✅ Completed |
+| [Loading](https://histeria13.github.io/CSS/loading/)                           | [./loading/](./loading/)                         | 19 Loading Animations                      |                      Animations                      | ✅ Completed |
 
 ---
 

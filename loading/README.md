@@ -14,3 +14,7 @@ Loading animations
 - Pseudo elements
 
 ## Screenshots
+
+Index
+
+<img src="screenshots/index.png" alt="" style="width: 400px; height: auto;">
