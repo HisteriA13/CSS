@@ -485,3 +485,44 @@ body {
     transform: rotateX(0) rotateY(0);
   }
 }
+
+/* ELLIPSE */
+.ellipse span {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.ellipse span:nth-child(1) {
+  border-bottom: 5px solid var(--red);
+  transform: rotateX(35deg) rotateY(-45deg);
+  animation: rotate1 1.5s linear infinite;
+}
+
+.ellipse span:nth-child(2) {
+  border-bottom: 5px solid var(--yellow);
+  transform: rotateX(50deg) rotateY(10deg);
+  animation: rotate2 2s linear infinite;
+}
+.ellipse span:nth-child(3) {
+  border-bottom: 5px solid var(--green);
+  transform: rotateX(35deg) rotateY(55deg);
+  animation: rotate3 3s linear infinite;
+}
+
+@keyframes rotate1 {
+  to {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate2 {
+  to {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate3 {
+  to {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
