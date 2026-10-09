@@ -587,3 +587,34 @@ body {
     transform: scale(1);
   }
 }
+
+/* MESSY */
+.messy span {
+  position: absolute;
+  top: 30%;
+  width: 40%;
+  height: 40%;
+  border: 2px solid #fff;
+  animation: messy 5s linear infinite;
+}
+
+.messy span:nth-child(1) {
+  border-radius: 65% 66% 34% 30% / 44% 59% 40% 60%;
+}
+.messy span:nth-child(2) {
+  animation-direction: reverse;
+  border-radius: 57% 74% 26% 43% / 73% 27% 56% 44%;
+}
+.messy span:nth-child(3) {
+  animation-duration: 3s;
+  border-radius: 43% 35% 65% 57% / 38% 62% 64% 36%;
+}
+
+@keyframes messy {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
