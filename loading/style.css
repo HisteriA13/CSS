@@ -1,11 +1,11 @@
 :root {
-  --blue: #0000ff;
+  --blue: #4343d1;
   --blue-1: #075d7d;
   --red: #ff0000;
   --red-2: #dc143c;
   --yellow: #dcdc08;
   --green: #008000;
-  --purple: #800080;
+  --purple: #cd46cd;
 }
 
 *,
@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #222;
 }
 
 .container {
@@ -49,7 +50,7 @@ body {
   position: relative;
   width: 130px;
   height: 130px;
-  background: rgba(192, 192, 192, 0.236);
+  /* background: rgba(192, 192, 192, 0.236); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,8 +59,8 @@ body {
 /* LOADING DOT CIRCLE */
 .loader-dot {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   animation: rotate 3.5s linear infinite;
 }
 
@@ -111,7 +112,7 @@ body {
 
 /* LAZY-BOUNCE */
 .lazy-bounce-wrapper {
-  column-gap: 10px;
+  column-gap: 5px;
 }
 
 .lazy-bounce {
@@ -150,7 +151,7 @@ body {
 /* DYNAMIC */
 .dynamic-wrapper {
   display: flex;
-  column-gap: 0.7em;
+  column-gap: 0.3em;
 }
 .dynamic {
   width: 15px;
@@ -178,8 +179,8 @@ body {
     height: 15px;
   }
   50% {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -221,7 +222,7 @@ body {
 .rotating-square {
   width: 15px;
   height: 15px;
-  margin: 0.5em;
+  margin: 0.3em;
   animation: rotateSquare 1.2s infinite;
 }
 
@@ -302,7 +303,7 @@ body {
   width: 70px;
   height: 10px;
   border-radius: 15px;
-  background: linear-gradient(var(--purple) 0 0) 0 / 0% no-repeat var(--red);
+  background: linear-gradient(var(--purple) 0 0) 0 / 0% no-repeat var(--yellow);
   animation: progress-bar 2.4s infinite;
 }
 
@@ -465,7 +466,7 @@ body {
 
 .perspective-square span:nth-child(2) {
   animation-delay: 1.4s;
-  opacity: 0.5;
+  background: var(--blue-1);
 }
 
 @keyframes perspective-square {
