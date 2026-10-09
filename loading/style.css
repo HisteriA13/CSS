@@ -1,6 +1,7 @@
 :root {
   --blue: #4343d1;
   --blue-1: #075d7d;
+  --blue-3: #63c7e9;
   --red: #ff0000;
   --red-2: #dc143c;
   --yellow: #dcdc08;
@@ -594,7 +595,7 @@ body {
   top: 30%;
   width: 40%;
   height: 40%;
-  border: 2px solid #fff;
+  border: 2px solid var(--blue-3);
   animation: messy 5s linear infinite;
 }
 
@@ -659,5 +660,51 @@ body {
   100% {
     width: 100px;
     border-radius: 8px;
+  }
+}
+
+/* KINETIC */
+.kinetic {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    border: 25px solid transparent;
+    border-bottom-color: var(--blue-3);
+    animation: rotationA 4s ease-in-out infinite calc(4s / 4);
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    animation: rotationB 4s ease-in-out infinite;
+  }
+}
+
+@keyframes rotationA {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationB {
+  0%,
+  25% {
+    transform: rotate(90deg);
+  }
+  50%,
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(450deg);
   }
 }
