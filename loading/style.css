@@ -526,3 +526,30 @@ body {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
 }
+
+/* SPEEDY */
+.speedy span:after {
+  content: "";
+  display: block;
+  border: 25px solid transparent;
+  border-top-color: var(--red-2);
+  border-bottom-color: var(--red-2);
+  border-radius: 50%;
+  animation: speedy 2s ease-in-out infinite;
+}
+
+@keyframes speedy {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  50% {
+    transform: rotate(720deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  100% {
+    transform: rotate(1440deg);
+  }
+}
