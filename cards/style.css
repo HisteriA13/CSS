@@ -283,3 +283,46 @@ li {
   opacity: 1;
   transition-delay: 0.5s;
 }
+
+/* -------------------------------------------- */
+/*                   CARD SIX                   */
+/* -------------------------------------------- */
+.cardSix {
+  perspective: 10rem;
+  transition: 1s;
+}
+
+.img-wrapperSix {
+  perspective: 10rem;
+  transition: 1s;
+}
+
+.img-wrapperSix img {
+  transform-origin: 0 100%;
+}
+
+.contentSix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  color: #232323;
+  padding-top: 2rem;
+  opacity: 0;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  transition: 1s;
+}
+
+.cardSix:hover img {
+  opacity: 0;
+  transform: rotateX(90deg);
+}
+
+.cardSix:hover .contentSix {
+  opacity: 1;
+  transform: rotateX(0);
+  transition-delay: 0.3s;
+}
