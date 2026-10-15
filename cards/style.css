@@ -46,7 +46,7 @@ figure {
 
 figure img {
   display: block;
-  min-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 1s;
@@ -362,6 +362,40 @@ li {
 /* -------------------------------------------- */
 /*                  CARD EIGHT                  */
 /* -------------------------------------------- */
-.cardEight figure {
-  height: 100%;
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0turn;
+  inherits: false;
+}
+
+.cardEight {
+  border: 10px solid transparent;
+  background:
+    linear-gradient(#728485, #f032d2),
+    conic-gradient(
+      from var(--gradient-angle),
+      #728485 0%,
+      #c30a7c 37%,
+      #09ed9f 30%,
+      #c30a7c 33%,
+      #728485 40%,
+      #728485 50%,
+      #c30a7c 77%,
+      #09ed9f 80%,
+      #c30a7c 83%,
+      #728485 90%
+    );
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  animation: 5s gradient-angle infinite linear;
+}
+
+@keyframes gradient-angle {
+  to {
+    --gradient-angle: 1turn;
+  }
+}
+
+.cardEight:hover img {
+  transform: scale(1.3);
 }
