@@ -53,6 +53,7 @@ figure img {
 }
 
 .content {
+  position: absolute;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -87,7 +88,6 @@ li {
 }
 
 .contentOne {
-  position: absolute;
   inset-inline: 10px;
   inset-block-end: 5px;
   padding: 0;
@@ -101,7 +101,6 @@ li {
 /*                   CARD TWO                   */
 /* -------------------------------------------- */
 .contentTwo {
-  position: absolute;
   left: 10%;
   bottom: 0;
   width: 80%;
@@ -196,7 +195,6 @@ li {
 }
 
 .contentFour {
-  position: absolute;
   bottom: 10px;
   left: 0;
   font-size: 1.1rem;
@@ -270,7 +268,6 @@ li {
 }
 
 .contentFive {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -304,7 +301,6 @@ li {
 }
 
 .contentSix {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -332,7 +328,6 @@ li {
 /*                  CARD SEVEN                  */
 /* -------------------------------------------- */
 .contentSeven {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -443,7 +438,6 @@ li {
 }
 
 .contentTen {
-  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
@@ -575,7 +569,6 @@ li {
 }
 
 .contentThirteen {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
