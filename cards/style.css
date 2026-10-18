@@ -507,7 +507,7 @@ li {
 }
 
 .cardTwelve img {
-  --b: 10px; /* border */
+  --b: 50px; /* border */
   --g: 20px; /* gap */
   --p: 30%;
   --a: 45deg;
@@ -548,16 +548,16 @@ li {
       calc(var(--_f) * cos(-45deg + var(--a)))
   );
   transition:
-    --p 0.3s,
-    --a 0.2s 0.2s;
+    --p 1s,
+    --a 1s 1s;
 }
 
 .cardTwelve img:hover {
   --a: 0deg;
   --p: 71%;
   transition:
-    --a 0.3s,
-    --p 0.2s 0.2s;
+    --a 1s,
+    --p 1s 1s;
 }
 
 /* -------------------------------------------- */
