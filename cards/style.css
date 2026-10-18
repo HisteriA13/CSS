@@ -616,3 +616,45 @@ li {
   border-color: #ccc;
   opacity: 1;
 }
+
+/* -------------------------------------------- */
+/*                 CARD FIFTEEN                 */
+/* -------------------------------------------- */
+.img::before,
+.img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: url(img/cardFifteen.png);
+  transition: 1s;
+}
+.img::before {
+  left: 0;
+  background-position: left;
+  transform-origin: left;
+}
+
+.img::after {
+  right: 0;
+  background-position: right;
+  transform-origin: right;
+}
+
+.contentFifteen {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.cardFifteen:hover .img::before,
+.cardFifteen:hover .img::after {
+  transform: rotateY(-85deg) scale(0.9);
+}
+
+.cardFifteen:hover .contentFifteen {
+  opacity: 1;
+}
