@@ -620,8 +620,8 @@ li {
 /* -------------------------------------------- */
 /*                 CARD FIFTEEN                 */
 /* -------------------------------------------- */
-.img::before,
-.img::after {
+.imgFifteen::before,
+.imgFifteen::after {
   content: "";
   position: absolute;
   top: 0;
@@ -630,13 +630,13 @@ li {
   background: url(img/cardFifteen.png);
   transition: 1s;
 }
-.img::before {
+.imgFifteen::before {
   left: 0;
   background-position: left;
   transform-origin: left;
 }
 
-.img::after {
+.imgFifteen::after {
   right: 0;
   background-position: right;
   transform-origin: right;
@@ -650,11 +650,73 @@ li {
   transition-delay: 0.5s;
 }
 
-.cardFifteen:hover .img::before,
-.cardFifteen:hover .img::after {
+.cardFifteen:hover .imgFifteen::before,
+.cardFifteen:hover .imgFifteen::after {
   transform: rotateY(-85deg) scale(0.9);
 }
 
 .cardFifteen:hover .contentFifteen {
   opacity: 1;
+}
+
+/* -------------------------------------------- */
+/*                 CARD SIXTEEN                 */
+/* -------------------------------------------- */
+.cardSixteen img {
+  transition: 4s;
+}
+
+.cardSixteen ul {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.cardSixteen ul li {
+  width: 20%;
+  height: 50px;
+}
+
+.cardSixteen ul li a {
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  background: #ccc;
+  color: #232323;
+  font-size: 20px;
+}
+
+.contentSixteen {
+  bottom: 0;
+  left: 0;
+  background: #ccc;
+  color: #232323;
+  padding-top: 0;
+  transform: translateY(100%);
+  transition: 1s;
+}
+
+.cardSixteen:hover img {
+  scale: 1.3;
+}
+
+.cardSixteen:hover ul {
+  opacity: 1;
+}
+
+.cardSixteen ul li a:hover {
+  background: #232323;
+  color: #ccc;
+}
+
+.cardSixteen:hover .contentSixteen {
+  transform: translateY(0);
 }
