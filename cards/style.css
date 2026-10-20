@@ -20,12 +20,13 @@ body {
   width: 100%;
   min-height: 100dvh;
   background: #232323;
-  padding: 50px 3rem;
+  padding: 70px 3rem 50px 3rem;
   line-height: 1.5;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   place-items: center;
   gap: 3rem;
+  overflow-x: hidden;
 }
 
 .card {
@@ -750,4 +751,54 @@ li {
 
 .cardSeventeen:hover .contentSeventeen {
   transform: rotateY(0);
+}
+
+/* -------------------------------------------- */
+/*                 CARD EIGHTEEN                */
+/* -------------------------------------------- */
+.cardEighteen figure::before,
+.cardEighteen figure::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  mix-blend-mode: multiply;
+  transition: 1s;
+}
+
+.cardEighteen figure::before {
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 0, 0, 0.8);
+  transform: skew(45deg) translateX(100%);
+}
+
+.cardEighteen figure::after {
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 255, 0.8);
+  transform: skew(-135deg) translateX(-100%);
+}
+
+.contentEighteen {
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.cardEighteen:hover figure:before {
+  transform: skew(45deg) translateX(0);
+}
+
+.cardEighteen:hover figure:after {
+  transform: skew(-135deg) translateX(0);
+}
+
+.cardEighteen:hover .contentEighteen {
+  opacity: 1;
 }
