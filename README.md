@@ -26,6 +26,7 @@ Each folder in this repository contains an individual solo project with its own 
 | [Buttons](https://histeria13.github.io/CSS/buttons/)                           | [./buttons/](./buttons/)                         | 24 Button Hover Effects                    |                   Styling buttons                    | ✅ Completed   |
 | [Loading](https://histeria13.github.io/CSS/loading/)                           | [./loading/](./loading/)                         | 19 Loading Animations                      |                      Animations                      | ✅ Completed   |
 | [Hovering Cards](https://histeria13.github.io/CSS/cards/)                      | [./cards/](./cards/)                             | Cards with Hover Effect                    |                    Styling cards                     | ⏳ In Progress |
+| [Masonry Grid](https://histeria13.github.io/CSS/gridMasonry/)                  | [./gridMasonry/](./gridMasonry/)                 | Masonry Grid                               |                         Grid                         | ⏳ In Progress |
 
 ---
 
