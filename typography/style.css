@@ -443,3 +443,49 @@ body {
     transform: rotateY(0);
   }
 }
+
+/* -------------------------------------------- */
+/*                  TEXT REVEAL                 */
+/* -------------------------------------------- */
+.textReveal {
+  position: relative;
+  color: snow;
+  font-family: monospace, serif;
+  letter-spacing: 5px;
+  padding-left: 10px;
+  z-index: 1;
+}
+
+.textReveal::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: teal;
+  border-right: 2px solid red;
+  animation: textReveal 4s forwards infinite;
+}
+
+@keyframes textReveal {
+  0% {
+    width: 100%;
+    z-index: 1;
+  }
+
+  50% {
+    width: 0;
+    z-index: 1;
+  }
+
+  51% {
+    width: 0;
+    z-index: -1;
+  }
+
+  100% {
+    width: 100%;
+    z-index: -1;
+  }
+}
