@@ -16,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 50px 0;
+  padding: 70px 0 50px 0;
   background: #333;
   position: relative;
 }
@@ -351,6 +351,7 @@ body {
 
 /* CAROUSEL */
 .carousel {
+  position: relative;
   font-family: "Special Elite", cursive;
   color: #54d3fe;
 }
@@ -370,6 +371,41 @@ body {
 @keyframes codingSlide {
   0%,
   100% {
+    content: "fun";
+  }
+  50% {
+    content: "hard";
+  }
+  65% {
+    content: "weird";
+  }
+}
+
+/* -------------------------------------------- */
+/*                 CAROUSEL SPAN                */
+/* -------------------------------------------- */
+.carouselSpan {
+  font-family: "Special Elite", cursive;
+  color: #54d3fe;
+  position: relative;
+  margin-left: -7rem;
+}
+
+.carouselSpan span::before {
+  display: inline-block;
+  position: absolute;
+  top: -0.6rem;
+  content: "fun";
+  background: red;
+  color: #fff;
+  margin-left: 1rem;
+  padding: 0.6rem;
+  border-radius: 10px;
+  animation: carouselSpan 4s infinite;
+}
+
+@keyframes carouselSpan {
+  0% {
     content: "fun";
   }
   50% {
