@@ -750,3 +750,87 @@ body {
     transform: translate(0, 160%);
   }
 }
+
+/* -------------------------------------------- */
+/*                  BOX SHADOW                  */
+/* -------------------------------------------- */
+.circleBoxShadow {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow:
+    15px 15px 0 var(--blue),
+    -15px 15px 0 var(--red),
+    15px -15px 0 var(--purple),
+    -15px -15px 0 var(--blue-1),
+    0 -25px 0 var(--red-2),
+    0 25px 0 var(--green),
+    25px 0 0 var(--blue-3),
+    -25px 0 0 var(--yellow);
+  animation: animate 5s infinite;
+}
+
+@keyframes animate {
+  0% {
+    box-shadow:
+      0 0 0 var(--blue),
+      0 0 0 var(--red),
+      0 0 0 var(--purple),
+      0 0 0 var(--blue-1),
+      0 0 0 var(--red-2),
+      0 0 0 var(--green),
+      0 0 0 var(--blue-3),
+      0 0 0 var(--yellow);
+    transform: rotate(0);
+  }
+
+  25% {
+    box-shadow:
+      15px 15px 0 var(--blue),
+      -15px 15px 0 var(--red),
+      15px -15px 0 var(--purple),
+      -15px -15px 0 var(--blue-1),
+      0 -25px 0 var(--red-2),
+      0 25px 0 var(--green),
+      25px 0 0 var(--blue-3),
+      -25px 0 0 var(--yellow);
+    transform: rotate(360deg);
+  }
+
+  75% {
+    box-shadow:
+      15px 15px 0 var(--blue),
+      -15px 15px 0 var(--red),
+      15px -15px 0 var(--purple),
+      -15px -15px 0 var(--blue-1),
+      0 -25px 0 var(--red-2),
+      0 25px 0 var(--green),
+      25px 0 0 var(--blue-3),
+      -25px 0 0 var(--yellow);
+    transform: rotate(720deg);
+  }
+  100% {
+    box-shadow:
+      0 0 0 var(--blue),
+      0 0 0 var(--red),
+      0 0 0 var(--purple),
+      0 0 0 var(--blue-1),
+      0 0 0 var(--red-2),
+      0 0 0 var(--green),
+      0 0 0 var(--blue-3),
+      0 0 0 var(--yellow);
+    transform: rotate(1440deg);
+  }
+}
+root {
+  --blue: #4343d1;
+  --blue-1: #075d7d;
+  --blue-3: #63c7e9;
+  --red: #ff0000;
+  --red-2: #dc143c;
+  --yellow: #dcdc08;
+  --green: #008000;
+  --purple: #cd46cd;
+}
