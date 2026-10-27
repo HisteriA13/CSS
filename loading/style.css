@@ -769,10 +769,10 @@ body {
     0 25px 0 var(--green),
     25px 0 0 var(--blue-3),
     -25px 0 0 var(--yellow);
-  animation: animate 5s infinite;
+  animation: boxShadowRotate 5s infinite;
 }
 
-@keyframes animate {
+@keyframes boxShadowRotate {
   0% {
     box-shadow:
       0 0 0 var(--blue),
@@ -824,13 +824,61 @@ body {
     transform: rotate(1440deg);
   }
 }
-root {
-  --blue: #4343d1;
-  --blue-1: #075d7d;
-  --blue-3: #63c7e9;
-  --red: #ff0000;
-  --red-2: #dc143c;
-  --yellow: #dcdc08;
-  --green: #008000;
-  --purple: #cd46cd;
+
+/* -------------------------------------------- */
+/*                 SIMPLE SCALE                 */
+/* -------------------------------------------- */
+.simpleScale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.simpleScale span {
+  display: inline-block;
+  width: 6px;
+  height: 20px;
+  background: var(--green);
+  border-radius: 2px;
+  animation: simpleScale 1s infinite alternate;
+}
+
+.simpleScale span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.simpleScale span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.simpleScale span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.simpleScale span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.simpleScale span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes simpleScale {
+  0% {
+    transform: scaleY(1);
+  }
+
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  75% {
+    transform: scaleY(3);
+  }
+
+  100% {
+    transform: scaleY(3);
+  }
 }
