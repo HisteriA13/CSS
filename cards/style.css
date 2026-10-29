@@ -628,7 +628,7 @@ li {
   top: 0;
   width: 50%;
   height: 100%;
-  background: url(img/cardFifteen.png);
+  background: url(img/dog15.jpg);
   transition: 1s;
 }
 .imgFifteen::before {
