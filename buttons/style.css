@@ -856,3 +856,89 @@ RIGHT TO LEFT SLIDE
   transform: scaleX(1);
   transform-origin: left;
 }
+
+/* ------------------------ */
+/*         BUTTON 25        */
+/* ------------------------ */
+.btnTwentyFive {
+  background: var(--yellow);
+  padding: 3px;
+}
+
+.btnTwentyFive span {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--btn-bg-color);
+  overflow: hidden;
+}
+
+.btnTwentyFive::before,
+.btnTwentyFive::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #333;
+  transition: 1s;
+}
+
+.btnTwentyFive::before {
+  left: -50%;
+}
+
+.btnTwentyFive::after {
+  right: -50%;
+  z-index: 1;
+}
+
+.btnTwentyFive span::before,
+.btnTwentyFive span::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: var(--red);
+  transition: 1s;
+}
+
+.btnTwentyFive span::before {
+  left: -50%;
+}
+
+.btnTwentyFive span::after {
+  right: -50%;
+  z-index: 2;
+}
+
+.btnTwentyFive:hover::before {
+  left: 0;
+}
+
+.btnTwentyFive:hover::after {
+  right: 0;
+}
+
+.btnTwentyFive:hover span::before {
+  left: 0;
+}
+
+.btnTwentyFive:hover span::after {
+  right: 0;
+}
+
+.btnTwentyFive p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--btn-color);
+  z-index: 3;
+  transition: 1s;
+}
+
+.btnTwentyFive:hover p {
+  color: var(--btn-bg-color);
+}
