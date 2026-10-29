@@ -33,8 +33,6 @@ body {
   position: relative;
   width: 250px;
   height: 350px;
-  background: #000;
-  color: #ccc;
   overflow: hidden;
 }
 
@@ -77,6 +75,10 @@ li {
 /* -------------------------------------------- */
 /*                   CARD ONE                   */
 /* -------------------------------------------- */
+.cardOne {
+  background: #ccc;
+  color: #232323;
+}
 .cardOne figure {
   height: auto;
 }
@@ -101,6 +103,10 @@ li {
 /* -------------------------------------------- */
 /*                   CARD TWO                   */
 /* -------------------------------------------- */
+.cardTwo {
+  color: #ccc;
+}
+
 .contentTwo {
   left: 10%;
   bottom: 0;
@@ -159,17 +165,17 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: green;
+  background: #ccc;
   transition: 1s;
   z-index: -2;
 }
 
 .cardThree::after {
-  background: yellow;
+  background: rgb(232, 191, 9);
 }
 
 .third-card {
-  background: red;
+  background: #ccc;
   z-index: -1;
 }
 
@@ -188,6 +194,9 @@ li {
 /* -------------------------------------------- */
 /*                   CARD FOUR                  */
 /* -------------------------------------------- */
+.cardFour {
+  background: #ccc;
+}
 .img-wrapperFour {
   position: absolute;
   top: 0;
@@ -213,6 +222,7 @@ li {
 .contentFour i {
   width: 45px;
   height: 45px;
+  color: #232323;
   font-size: 2rem;
   display: flex;
   justify-content: center;
@@ -258,13 +268,13 @@ li {
   font-size: 2rem;
   line-height: 50px;
   text-align: center;
-  box-shadow: 0 0 0 0px #000;
+  box-shadow: 0 0 0 0px firebrick;
   pointer-events: none;
   transition: 1s;
 }
 
 .inputFive:checked ~ .toggleFive {
-  box-shadow: 0 0 0 400px #000;
+  box-shadow: 0 0 0 400px firebrick;
   transform: rotate(225deg);
 }
 
@@ -273,6 +283,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
+  color: #ccc;
   opacity: 0;
   transition: 0.5s;
   pointer-events: none;
@@ -334,6 +345,7 @@ li {
   width: 100%;
   height: 100%;
   background: #000;
+  color: #ccc;
   text-align: center;
   transform: translateX(-100%);
   transition: 1s;
@@ -398,6 +410,8 @@ li {
 /*                   CARD NINE                  */
 /* -------------------------------------------- */
 .cardNine {
+  color: #ccc;
+  letter-spacing: 3px;
   overflow: visible;
 }
 
@@ -432,7 +446,7 @@ li {
   content: "";
   position: absolute;
   inset: 0;
-  background: #39271f;
+  background: #ccc;
   opacity: 0.8;
   transform: scale(2) translate(-60%, -60%) rotate(45deg);
   transition: 1s ease-in-out;
@@ -574,7 +588,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(74, 42, 47);
+  background: #ccc;
   transform: scale(0) rotate(180deg);
   transition: 1s;
 }
@@ -621,6 +635,10 @@ li {
 /* -------------------------------------------- */
 /*                 CARD FIFTEEN                 */
 /* -------------------------------------------- */
+.cardFifteen {
+  background: #232323;
+  color: #ccc;
+}
 .imgFifteen::before,
 .imgFifteen::after {
   content: "";
@@ -676,6 +694,7 @@ li {
   height: 50%;
   display: flex;
   flex-direction: column;
+  align-items: end;
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0.5s;
@@ -785,6 +804,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
+  color: #ccc;
   z-index: 9;
   opacity: 0;
   transition: 1s;
