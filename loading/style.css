@@ -882,3 +882,47 @@ body {
     transform: scaleY(3);
   }
 }
+
+/* -------------------------------------------- */
+/*                  SVG CIRCLE                  */
+/* -------------------------------------------- */
+.svgCircle svg {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.svgCircle svg circle {
+  fill: none;
+  stroke: var(--blue-1);
+  stroke-width: 10px;
+  stroke-linecap: round;
+  animation: svgCircle 2s linear infinite;
+}
+
+.svgCircle svg:nth-child(1) circle {
+  filter: blur(5px);
+  stroke: var(--blue-3);
+}
+
+.svgCircle svg:nth-child(2) circle {
+  filter: blur(10px);
+  stroke: var(--blue-3);
+}
+
+@keyframes svgCircle {
+  0% {
+    stroke-dasharray: 135;
+    stroke-dashoffset: 135;
+  }
+
+  50% {
+    stroke-dasharray: 135;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dasharray: 135;
+    stroke-dashoffset: -135;
+  }
+}
