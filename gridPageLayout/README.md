@@ -1,6 +1,6 @@
 # Grid - Page Layout
 
-Grid page layout using grid-template-areas created while learning web development through [W3Schools](https://www.w3schools.com/).
+Responsive grid page layout using grid-template-columns created while learning web development through [W3Schools](https://www.w3schools.com/).
 
 ## Technologies
 
