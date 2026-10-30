@@ -27,7 +27,7 @@ Each folder in this repository contains an individual solo project with its own 
 | 7.  | [Loading](https://histeria13.github.io/CSS/loading/)                           | [./loading/](./loading/)                         | 22 Loading Animations                      |                      Animations                      | ✅ Completed   |
 | 8.  | [Hovering Cards](https://histeria13.github.io/CSS/cards/)                      | [./cards/](./cards/)                             | Cards with Hover Effect                    |                    Styling cards                     | ⏳ In Progress |
 | 9.  | [Masonry Grid](https://histeria13.github.io/CSS/gridMasonry/)                  | [./gridMasonry/](./gridMasonry/)                 | Masonry Grid                               |                         Grid                         | ✅ Completed   |
-| 10. | [Grid Page Layout](https://histeria13.github.io/CSS/gridPageLayout/)           | [./gridPageLayout/](./gridPageLayout/)           | Responsive full page layout using grid     |            Grid, `grid-template-columns`             | ⏳ In progress |
+| 10. | [Grid Page Layout](https://histeria13.github.io/CSS/gridPageLayout/)           | [./gridPageLayout/](./gridPageLayout/)           | Responsive full page layout using grid     |            Grid, `grid-template-columns`             | ✅ Completed   |
 
 ---
 
